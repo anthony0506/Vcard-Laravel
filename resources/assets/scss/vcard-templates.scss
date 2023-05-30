@@ -1,0 +1,135 @@
+.img-box > input {
+    display: none;
+}
+
+.template-border {
+    border: 3px solid #0b9ef7 !important;
+    border-radius: 10px !important;
+}
+
+.btn-check {
+    &:focus+.btn {
+        outline: unset !important;
+        box-shadow: unset !important;
+    }
+}
+.btn {
+    &:focus {
+        outline: unset !important;
+        box-shadow:  unset !important;
+    }
+}
+
+.screen.image {
+    padding: 5px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    height: auto;
+
+    img {
+        width: 100%;
+        transition-duration: 0.5s;
+        transform-origin: 50% 50%;
+        object-fit: cover;
+        object-position: top;
+        height: 400px;
+        transition: 5s all ease;
+    }
+
+    &:hover {
+        img {
+            object-position: left;
+        }
+    }
+}
+
+.screen.vcard_11 {
+    padding: 5px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    height: auto;
+
+    img {
+        width: 100%;
+        transition-duration: 0.5s;
+        transform-origin: 50% 50%;
+        object-fit: cover;
+        object-position: left;
+        height: 400px;
+        transition: 5s all ease;
+    }
+
+    &:hover {
+        img {
+            object-position: right;
+        }
+    }
+}
+
+
+.img-radio .screen.vcard_11 {
+    padding: 5px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    height: auto;
+
+    img {
+        width: 100%;
+        transition-duration: 0.5s;
+        transform-origin: 50% 50%;
+        object-fit: cover;
+        object-position: left;
+        height: 400px;
+        transition: 5s all ease;
+    }
+
+    &:hover {
+        img {
+            object-position: right;
+        }
+    }
+}
+
+.img-radio {
+    padding: 5px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    height: auto;
+
+    img {
+        width: 100%;
+        transition-duration: 0.2s;
+        transform-origin: 50% 50%;
+        object-fit: cover;
+        object-position: top;
+        height: 400px;
+        transition: 5s all ease;
+    }
+
+    &:hover {
+        img {
+            object-position: left;
+        }
+    }
+}
+
+.img-radio.img-border {
+    border: 3px solid #0b9ef7 !important;
+    border-radius: 10px !important;
+}

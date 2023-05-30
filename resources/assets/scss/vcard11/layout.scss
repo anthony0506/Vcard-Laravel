@@ -1,0 +1,305 @@
+@import "variables";
+
+.main-bg {
+    width: 70%;
+    height: 80vh;
+    background-color: $blue;
+    position: relative;
+    overflow: hidden;
+    top: 75px;
+    margin: auto;
+    border-radius: 20px;
+    @media (max-width: 1499px) {
+        width: 90%;
+        height: 80vh;
+    }
+    @media (max-width: 1299px) {
+        width: 95%;
+        height: 90vh;
+        top: 50px;
+    }
+    @media (max-width: 1199px) {
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        border-radius: 0;
+    }
+}
+
+.main-header {
+    position: absolute;
+    overflow-y: auto;
+    width: 320px;
+    height: 100%;
+    bottom: 0;
+    min-width: 320px;
+    z-index: 2;
+
+    .hero-img {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+.icon-box {
+    bottom: -20px;
+    left: 12px;
+}
+
+.social-icon {
+    background: $primary;
+    border-radius: 50px;
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+
+    a {
+        padding: 12px;
+    }
+
+    i {
+        border-radius: 10px;
+    }
+
+    i::before {
+        color: $white;
+    }
+}
+
+#pages-menu, #pages-menu1 {
+    display: none;
+}
+
+.top-header {
+    position: absolute;
+    left: 320px;
+    right: 0;
+    top: 0px;
+    z-index: 9999;
+    border-left: 0px solid transparent;
+    box-sizing: border-box;
+    @media (max-width: 991px) {
+        left: 0px;
+        background-color: $dark;
+    }
+
+    .home {
+        i {
+            padding: 10px;
+            border-radius: 5px;
+            background-image: $primary;
+        }
+    }
+
+    .sharedropbtn {
+        border: none;
+        cursor: pointer;
+        @media (max-width: 991px) {
+            padding: 6px 12px;
+        }
+    }
+
+    .contact {
+        i {
+            background-image: $primary;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .dropbtn, .copy-referral-btn {
+        border: none;
+        cursor: pointer;
+        @media (max-width: 991px) {
+            padding: 7px 10px;
+        }
+        @media (max-width: 575px) {
+            padding: 9px 12px;
+        }
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .fa-solid.fa-sort-down {
+        position: relative;
+        bottom: 2px;
+    }
+
+    .dropdown-content {
+        padding: 15px 15px 0px 15px;
+        display: none;
+        position: absolute;
+        background-color: #222739;
+        right: 0;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 9999999999;
+        @media (max-width: 991px) {
+            top: 50px;
+        }
+    }
+
+    .dropdown-content a {
+        color: $white;
+        padding: 0 0 15px 0;
+        font-size: 14px;
+        text-decoration: none;
+        display: block;
+        @media (max-width: 575px) {
+            font-size: 12px;
+        }
+
+        img {
+            width: 18px;
+            height: 18px;
+        }
+    }
+
+    .dropdown-content {
+        a:hover, .active, :focus {
+            background-image: $primary;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .show {
+        display: block;
+    }
+
+    .sharedropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .sharedropdown-content {
+        padding: 10px;
+        display: none;
+        position: absolute;
+        background-color: #222739;
+        right: 0;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 9999999;
+        @media (max-width: 991px) {
+            top: 50px;
+        }
+    }
+
+    .sharedropdown-content a {
+        color: $white;
+        padding: 0 0 15px 0;
+        font-size: 14px;
+        text-decoration: none;
+        display: block;
+        @media (max-width: 575px) {
+            font-size: 12px;
+        }
+
+    }
+
+    // .sharedropdown-content a:hover ,.active {
+    //  background-image: $primary;
+    //  background-clip: text;
+    //  -webkit-text-fill-color: transparent;
+    // }
+
+
+    .activetab {
+        display: block;
+    }
+
+
+    .share-icon {
+        background: $primary;
+        border-radius: 50px;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+
+        &:hover, &:focus, &.active {
+            background: transparent;
+            border: $border;
+
+            i::before {
+                background-image: $primary;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+            }
+        }
+
+        a {
+            padding: 10px;
+        }
+
+        i {
+            border-radius: 10px;
+        }
+
+        i::before {
+            color: $white;
+
+        }
+    }
+
+}
+
+.nav-tabs {
+    background-color: transparent;
+    border: $border;
+    border-radius: 10px;
+
+    .nav-link.active {
+        background-image: $primary;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-bottom: $border;
+    }
+
+    .nav-link {
+        text-align: start;
+        background-color: transparent;
+        border: 0;
+        border-bottom: $border;
+        width: 100%;
+        color: $white;
+        position: relative;
+        padding: 10px 12px;
+
+        &.active,
+        &:hover,
+        &:focus,
+        &:visited {
+            background-color: transparent;
+            border: 0;
+            border-bottom: $border;
+        }
+
+        i {
+            width: 18px;
+            height: 18px;
+            background-image: $primary;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .fa-plus {
+            position: absolute;
+            right: 10px;
+            top: 14px;
+        }
+    }
+}
+
+.custom-social-position {
+    top: 228px !important;
+}
+

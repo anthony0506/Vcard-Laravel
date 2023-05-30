@@ -1,0 +1,100 @@
+@import "variables";
+
+.portfolio-section {
+    .tab-content {
+        @media (max-width: 575px) {
+            top: 200px;
+        }
+    }
+
+    .nav-tabs {
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+    .nav-tabs a {
+        background-image: $primary;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .nav-tabs .nav-link {
+        border-right: $border;
+        border-radius: 0;
+        @media (max-width: 575px) {
+            border-right: 0px solid rgba(255, 255, 255, .24);
+            border-bottom: $border;
+        }
+    }
+
+    .nav-tabs .nav-link.active {
+        background-clip: padding-box;
+
+        a {
+            background-image: linear-gradient(123.62deg, $white 0%, $white 100%);
+        }
+    }
+
+    .tab-content {
+        left: 0;
+        padding: 0 25px;
+    }
+
+    .portfolio-img {
+        width: 100%;
+        height: 240px;
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #292e4eac;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+        z-index: 99;
+
+        span {
+            background-image: $primary;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .website {
+            bottom: 0;
+
+            a {
+                color: $white;
+            }
+
+            i::before {
+                background-image: $primary;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+
+        .search {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-image: $primary;
+            border-bottom-left-radius: 5px;
+
+            i {
+                color: $white;
+            }
+        }
+    }
+
+    .portfolio-img:hover .overlay {
+        height: 100%;
+    }
+}
+

@@ -1,0 +1,414 @@
+.new-logo-image {
+    height: 60px;
+    object-fit: contain !important;
+}
+
+.image-object-fit-cover {
+    object-fit: cover !important;
+}
+
+.feature-image-card {
+    height: 70px;
+    border-radius: 8px;
+}
+
+header {
+    .navbar-nav {
+        .dropdown {
+            z-index: 1;
+        }
+    }
+    
+    .navbar-toggler {
+        @media (max-width: 991px) {
+            position: absolute;
+            top: 16px;
+            right: 12px;
+        }
+    }
+    .header-btn {
+        @media (max-width: 991px) {
+            padding-right: 50px;
+        }
+    }
+}
+
+.dropdown-menu {
+    .active {
+        color: #fff !important;
+        text-decoration: none !important;
+        background-color: #00c577 !important;
+    }
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all .5s ease-in-out;
+    z-index: 1
+}
+
+.header.fixed {
+    background-color: #fff;
+    box-shadow: 0px 3px 10px 0px rgb(38 107 193 / 8%);
+}
+
+#toast-container .toast.toast-error {
+    opacity: 1;
+}
+#toast-container .toast.toast-success {
+    opacity: 1;
+}
+.p-t-100{
+    padding-top: 100px !important;
+}
+footer .copy-right {
+    border-top: 1px solid #dcdcdc;
+    color: #a9a9a9;
+}
+
+.features__features-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: .625rem;
+    margin-bottom: 30px
+}
+
+.js-cookie-consent {
+    background-color: #e9f9ff !important;
+}
+
+.plans-description {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1*var(--bs-gutter-y));
+    // margin-left: auto;
+    // margin-right: auto;
+    flex-direction: column;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    line-height: 66px;
+}
+
+.hero-content h2 {
+    font-family: 'K2D'; 
+    font-style: normal; 
+    font-weight: 800; 
+    font-size: 64px; 
+    line-height: 72px; 
+    display: flex; 
+    align-items: center; 
+    background: radial-gradient(96.91% 384.39% at 3.09% 66.67%, #00A353 0%, rgba(0, 163, 83, 0.49) 56.77%, #00A353 100%); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    background-clip: text; 
+    text-fill-color: transparent;
+}
+
+.feature-pricing-section {
+    .sample-slider {
+        z-index: 0; 
+        height: 425px;
+    }
+
+    .features-header,
+    .card-header {
+        height: 9em;
+    }
+    
+    .flex-wrap>*,
+    .features-list>*,
+    .monthly-plans>*,
+    .yearly-plans>* {
+        padding-right: calc(var(--bs-gutter-x)*.25);
+        padding-left: calc(var(--bs-gutter-x)*.25);
+    }
+
+    .features-list {
+        width: 25%;
+    }
+
+    .monthly-plans,
+    .yearly-plans {
+        width: 75%;
+    }
+
+    .monthly-plans-dyn,
+    .yearly-plans-dyn {
+        width: 33%;
+    }
+
+    .card-header .fw-bold {
+        background: radial-gradient(96.91% 384.39% at 3.09% 66.67%, #00A353 0%, rgba(0, 163, 83, 0.49) 56.77%, #00A353 100%); 
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.about-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+    h1.display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1280px) {
+    .about-section {
+        h1.display-4 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .header .navbar-toggler {
+        top: 15px;
+    }
+
+    .hero-content {
+        h1, h2 {
+            font-size: 56px;
+        }
+    }
+
+    .features-section {
+        .container {
+            max-width: 970px !important;
+        }
+
+        .features-header,
+        .card-header {
+            height: 9em;
+        }
+
+        .flex-wrap>*,
+        .features-list>*,
+        .monthly-plans>*,
+        .yearly-plans>* {
+            padding-right: calc(var(--bs-gutter-x)*.1);
+            padding-left: calc(var(--bs-gutter-x)*.1);
+        }
+    
+        .card-header {
+            h2 {
+                margin-bottom: 0.25rem;
+
+                span:nth-child(2) {
+                    display: block;
+                }
+            }
+
+            h6 {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    header .navbar-toggler {
+        top: 5px;
+    }
+
+    .hero-content {
+        h1, h2 {
+            font-size: 64px;
+            line-height: 64px;
+            font-weight: bold;
+        }
+    }
+
+    .header-logo img {
+        height: 60px;
+        width: auto !important;
+    }
+
+    .nav-btn {
+        padding: .45rem 1.363rem;
+    }
+
+    .features-section {
+        .sample-slider {
+            height: 470px;
+        }
+    }
+
+    .about-section {
+        h1.display-4 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .subscribe-container {
+        display: flex;
+        flex-direction: column;
+        width: 50% !important;
+    }
+
+    .subscribe-container input, button {
+        border-radius: 4px !important;
+    }
+
+    .subscribe-container input {
+        margin-bottom: 5px;
+        width: 100% !important;
+    }
+
+    #frontContactTab .header-logo img {
+        height: 60px !important;
+    }
+
+    #frontAboutTab div h1 {
+        font-size: 1.5rem;
+    }
+
+    .feature-pricing-section {
+        padding-top: 120px !important;
+    }
+
+    .plans-description {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .features-section {
+        .features-header,
+        .card-header {
+            height: 9em;
+        }
+
+        .features-list {
+            width: 225px;
+        }
+    
+        .monthly-plans,
+        .yearly-plans {
+            width: 500px;
+            overflow-x: auto;
+        }
+    
+        .monthly-plans-dyn,
+        .yearly-plans-dyn {
+            min-width: 225px;
+        }
+    }
+
+    .contact-section {
+        img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section .hero-content {
+        h1, h2 {
+            font-size: 56px;
+            line-height: 56px;
+        }
+    }
+
+    .features-section {
+        .features-list {
+            width: 175px;
+        }
+    
+        .monthly-plans,
+        .yearly-plans {
+            width: 350px;
+            overflow-x: auto;
+        }
+    
+        .monthly-plans-dyn,
+        .yearly-plans-dyn {
+            min-width: 225px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section .hero-content {
+        h1, h2
+        {
+            font-size: 48px;
+            line-height: 48px;
+        }
+    }
+
+    .contact-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .features-section {
+        .features-list {
+            width: 150px;
+
+            h4 {
+                font-size: 1rem;
+            }
+        }
+    
+        .monthly-plans,
+        .yearly-plans {
+            width: 250px;
+            overflow-x: auto;
+        }
+    
+        .monthly-plans-dyn,
+        .yearly-plans-dyn {
+            min-width: 200px;
+
+            .card-header a {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 410px) {
+    .header .header-btn a:last-child {
+        display: none;
+    }
+
+    .features-section {
+        .monthly-plans,
+        .yearly-plans {
+            width: 225px;
+            overflow-x: auto;
+        }
+    
+        .monthly-plans-dyn,
+        .yearly-plans-dyn {
+            min-width: 150px;
+
+            .card-header h6 {
+                font-size: 0.8rem !important;
+            }
+
+            .card-header a {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

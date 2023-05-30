@@ -1,0 +1,318 @@
+.vcard-one-main-section {
+    .blog-title {
+        font-size: 28px;
+        font-weight: 600;
+        color: #313BAC;
+        word-break: break-all;
+    }
+
+    .img-bx {
+        padding: 20px;
+        box-shadow: -6px -2px 16px rgb(255 255 255 / 80%), 6px 5px 12px rgb(158 158 158 / 40%);
+        border-radius: 10px;
+
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+    }
+
+    .details {
+        p {
+            font-size: 18px;
+            color: #B8B8B8;
+            word-break: break-all;
+        }
+    }
+}
+
+.vcard-one-bg {
+    background-color: #fff !important;
+}
+
+.vcard-two-bg {
+    background-color: #fff !important;
+}
+
+.vcard-three-bg {
+    background-color: #141E30 !important;
+}
+
+.vcard-four-bg {
+    background-color: #fff !important;
+}
+
+.vcard-five-bg {
+    background: linear-gradient(270deg, #C9F1FF 0%, #DBD9E9 100%) !important;
+}
+
+.vcard-six-bg {
+    background: linear-gradient(270deg, #8C9EFF 100%, #3D5AFE 100%) !important;
+}
+
+.vcard-seven-bg {
+    background: #ECF0F3 !important;
+}
+
+.vcard-eight-bg {
+    background: #00081c !important;
+}
+
+.vcard-nine-bg {
+    background-color: #fff !important;
+}
+
+.vcard-ten-bg {
+    background-color: #2d2833 !important;
+}
+
+.vcard-one-img-bx {
+    background-color: #fff;
+}
+
+.vcard-two-img-bx {
+    background-color: #fff;
+}
+
+.vcard-three-img-bx {
+    background-color: #dcdcdc;
+}
+
+.vcard-four-img-bx {
+    background-color: #DEEFE3;
+}
+
+.vcard-five-img-bx {
+    background-color: #fff;
+}
+
+.vcard-six-img-bx {
+    background-color: #FE80AB;
+}
+
+.vcard-seven-img-bx {
+    background: #ECF0F3;
+    box-shadow: inset -10px -10px 20px #ffffff, inset 10px 10px 20px #d1d9e6 !important;
+    padding: 20px !important;
+    border-radius: 10px !important;
+}
+
+.vcard-eight-img-bx {
+    background-color: rgba(65, 98, 144, 0.4) !important;
+    box-shadow: 0 0 8px 2px #737373 !important;
+}
+
+.vcard-nine-img-bx {
+    background-color: #fff;
+}
+
+.vcard-ten-img-bx {
+    background-color: #3d3943 !important;
+    box-shadow: 0 0 8px 2px #737373 !important;
+}
+
+.vcard-one-title {
+    color: #313BAC !important;
+}
+
+.vcard-two-title {
+    color: #3A4151 !important;
+}
+
+.vcard-three-title {
+    color: #fff !important;
+
+}
+
+.vcard-four-title {
+    color: #134E5E !important;
+}
+
+.vcard-five-title {
+    color: #2D1863 !important;
+}
+
+.vcard-six-title {
+    color: #ffff !important;
+}
+
+.vcard-seven-title {
+    color: #2E4D5C !important;
+}
+
+.vcard-eight-title {
+    color: #fff !important;
+}
+
+.vcard-nine-title {
+    font-weight: 600;
+    font-size: 24px !important;
+    color: #fff !important;
+    background: linear-gradient(90deg, #B24592 0%, #F15F79 100%);
+    border-radius: 0 0 50px 0;
+    width: fit-content;
+    padding: 16px 30px;
+    margin-left: -16px;
+}
+
+.vcard-ten-title {
+    color: #cfd0d1 !important;
+}
+
+
+.vcard-one-back {
+    padding: 10px 20px;
+    background: #313BAC;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: fit-content;
+    color: white;
+
+    &:hover {
+        color: white !important;
+    }
+}
+
+.vcard-two-back {
+    padding: 10px 18px;
+    background: #FB5253;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    width: fit-content;
+    color: white;
+
+    &:hover {
+        color: white !important;
+    }
+}
+
+.vcard-three-back {
+    padding: 10px 20px;
+    background: #4CA1F2;
+    box-shadow: inset 6px 6px 12px #3172b1, inset -6px -6px 12px #51acff;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    width: fit-content;
+    color: white;
+
+    &:hover {
+        color: white !important;
+    }
+}
+
+.vcard-four-back {
+    padding: 10px 20px;
+    background: linear-gradient(126.11deg, #134E5E 0%, #71B280 100%);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: fit-content;
+    color: white;
+
+    &:hover {
+        color: white !important;
+    }
+}
+
+.vcard-five-back {
+    padding: 10px 20px;
+    background: #6F34FE;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: fit-content;
+    color: white;
+
+    &:hover {
+        color: white !important;
+    }
+}
+
+.vcard-six-back {
+    padding: 10px 20px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: fit-content;
+    color: #FE80AB;
+    box-shadow: 0 0 8px 2px #e3e3e3;
+
+    &:hover {
+        color: #FE80AB !important;
+    }
+}
+
+.vcard-seven-back {
+    padding: 10px 20px;
+    background: #ECF0F3;
+    box-shadow: 10px 10px 30px #d1d9e6, -10px -10px 30px #ffffff !important;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: fit-content;
+    color: black;
+
+    &:hover {
+        color: black !important;
+    }
+}
+
+.vcard-eight-back {
+    padding: 10px 20px;
+    background: #203556;
+    border: none;
+    outline: none;
+    border-radius: 0 10px 0 10px;
+    transition: all 0.3s ease;
+    width: fit-content;
+    color: white;
+
+    &:hover {
+        color: white !important;
+    }
+}
+
+.vcard-nine-back {
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #B24592 0%, #F15F79 100%);
+    box-shadow: -6px -2px 16px rgb(255 255 255 / 80%), 6px 5px 20px rgb(158 158 158 / 40%);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: fit-content;
+    color: white;
+
+    &:hover {
+        color: white !important;
+    }
+}
+
+.vcard-ten-back {
+    padding: 10px 20px;
+    background: #3d3943;
+    box-shadow: 5px 5px 0px #18151b, -5px -5px 0px #3a3541;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    width: fit-content;
+    color: #02daa7;
+
+    &:hover {
+        color: #02daa7 !important;
+    }
+}

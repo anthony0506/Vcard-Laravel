@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 992px) {
+    .card.subscription {
+        height: auto;
+    }
+    .not-plan {
+        padding: 23rem 0 23rem 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .not-plan {
+        padding: 5rem 0 5rem;
+    }
+}
+
+.pricing-card {
+    padding: 30px 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: 0.1s ease;
+    border: 3px solid transparent;
+
+    &.show {
+        transition: 0.1s ease;
+        border: 3px solid #009ef7;
+    }
+
+    &:hover {
+        box-shadow: 0 2px 9px 3px rgb(0 0 0 / 10%);
+        cursor: pointer;
+    }
+
+    .pricing-amount {
+        padding: 10px 0 30px;
+        font-size: 36px;
+
+        @media (max-width: 576px) {
+            font-size: 30px;
+        }
+    }
+
+    .pricing-day {
+        font-size: 13px;
+        color: #9b9b9b;
+    }
+
+    .pricing-division {
+        padding: 10px 0 20px;
+
+        .pricing-btn {
+            background-color: #2196f3;
+            color: white;
+            border: 0;
+            border-radius: 0;
+        }
+    }
+}
