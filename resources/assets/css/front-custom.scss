@@ -1,0 +1,456 @@
+#pricing {
+    background-image: url('../../../public/front/images/counter-bg.png');
+}
+
+#valid-msg, .profile-valid-msg {
+    color: green;
+    margin-left: 2px;
+}
+
+.emailStyle{
+    @media (min-width: 500px) {
+        width: 400px !important;
+    }
+}
+
+.authImage {
+    background-image: url('../../../public/web/media/illustrations/progress-hd.png');
+}
+
+
+.iti {
+    display: block !important;
+    width: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.footer {
+    position: fixed !important;
+    bottom: 0 !important;
+    z-index: 3 !important;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .content {
+        padding: 0;
+    }
+}
+
+.mb-90 {
+    margin-bottom: 90px;
+}
+
+img{
+    object-fit: cover;
+}
+
+.image-input {
+    .app-logo-image {
+        max-width: 125px;
+        max-height: 80px;
+    }
+}
+
+
+.custom-circle {
+    border-radius: 50% !important;
+}
+
+.feature-image {
+    width: 63px;
+    height: 63px;
+    border-radius: 37px;
+    object-fit: cover;
+}
+
+.home-banner-img {
+    max-width: 800px;
+    max-height: 640px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+// subscription plans purchase css
+.plan-border-bottom {
+    border-bottom: 1px dashed #eff2f5;
+}
+
+.plan-card-shadow  {
+    box-shadow: 0 0 20px 0 rgb(76 87 125 / 5%);
+}
+
+.plan-data {
+    width: 60%;
+
+    @media (max-width: 767px) {
+        width: 50%;
+    }
+}
+
+.plan-controls {
+    @media (max-width: 375px) {
+        display: initial !important;
+        & > div:first-child {
+            width: 100% !important;
+        }
+    }
+}
+
+.delete-btn {
+    &.btn.btn-active-color-danger:focus:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g) {
+        fill: #a1a5b7 !important;
+    }
+}
+
+.delete-btn {
+    &:hover {
+        &.btn.btn-active-color-danger:focus:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g) {
+            fill: #d9534f !important;
+        }
+    }
+}
+
+.carousel-control-next, .carousel-control-prev  {
+    &:focus {
+        background-color: #90d2f2 !important;
+    }
+}
+
+.carousel-control-next, .carousel-control-prev  {
+    &:hover {
+        background-color: #0ea6e9 !important;
+    }
+}
+
+.icon-success {
+    svg {
+        rect, path {
+            fill: #50cd89;
+        }
+    }
+}
+
+.icon-danger {
+    svg {
+        rect, path {
+            fill: #fd9e9e;
+        }
+    }
+}
+
+.vcard__testimonial .testimonial-slider .slick-slide {
+    display: none;
+}
+
+
+.plan-slider {
+    .slick-track {
+        padding-top: 20px;
+    }
+
+    .slick-next:before {
+        content: "\f054";
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        color: #0ea6e9;
+    }
+
+    .slick-prev:before {
+        content: "\f053";
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        color: #0ea6e9;
+    }
+
+    .slick-dots {
+        li {
+            button {
+                &:before {
+                    font-size: 24px;
+                }
+
+                &:hover:before {
+                    color: #0ea6e9;
+                }
+            }
+
+            &.slick-active {
+                button {
+                    &:before {
+                        color: #0ea6e9;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 24px 0;
+    font-weight: 700;
+
+    @media (max-width: 992px) {
+        display: block;
+        overflow-x: hidden;
+    }
+}
+
+.weekly-content {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 0;
+    border-bottom: 1px solid #cecece;
+
+    .checkbox-content {
+        width: 88px;
+    }
+
+    .weekly-icon {
+        margin-left: auto;
+
+        @media (max-width: 1035px) {
+            top: 0;
+        }
+    }
+
+    .plus-icon {
+        width: 44px !important;
+    }
+
+    .small-border {
+        align-items: center;
+        display: flex;
+        font-size: 15px;
+        padding: 0 5px 0 5px;
+    }
+
+}
+
+
+.pricing {
+    .slick-prev, .slick-next {
+        @media (max-width: 600px) {
+            display: none !important;
+        }
+    }
+
+    .slick-dots {
+        width: calc(100% - 50px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.custom-font {
+    font-size: 12px !important;
+
+    i {
+        font-size: 15px !important;
+    }
+}
+
+
+.custom-toolbar {
+    @media (max-width: 576px) {
+        justify-content: end;
+        width: 100%;
+    }
+}
+
+.custom-group-text {
+    @media (max-width: 576px) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.custom-plan-card {
+    @media (max-width: 576px) {
+        min-height: 0 !important;
+    }
+}
+
+.custom-toolbar {
+    @media (max-width: 992px) {
+        padding: 0 !important;
+    }
+}
+
+.col-xs {
+    @media (max-width: 400px) {
+        width: 100%;
+    }
+}
+
+.front-language {
+    @media screen and (min-width: 992px) {
+        &:hover {
+            .dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1);
+            }
+        }
+
+        .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            transform: scale(1, 0);
+            transform-origin: top;
+        }
+    }
+
+    .dropdown-menu {
+        @media (max-width: 991px) {
+            display: none !important;
+            margin-bottom: 20px;
+
+            &.show {
+                display: block !important;
+            }
+        }
+        .dropdown-item {
+            &:active, &:hover, &.show {
+                color: #0ea6e9;
+                background-color: #e9ecef;
+
+                a {
+                    span {
+                        color: #0ea6e9;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            a {
+                span {
+                    color: #1a3365;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.navbar {
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                &:active, 
+                &:hover {
+                    color: #00a353;
+                }
+
+                @media (max-width: 991px) {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.front-language {
+    @media screen and (min-width: 992px) {
+        &:hover {
+            .dropdown-menu {
+                opacity: 1;
+                visibility: visible;
+                transform: scale(1);
+            }
+        }
+
+        .dropdown-menu {
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            transform: scale(1, 0);
+            transform-origin: top;
+        }
+    }
+
+    .dropdown-menu {
+        @media (max-width: 991px) {
+            display: none !important;
+            margin-bottom: 20px;
+
+            &.show {
+                display: block !important;
+            }
+        }
+        .dropdown-item {
+            &:active, &:hover, &.show {
+                color: #0ea6e9;
+                background-color: #e9ecef;
+
+                a {
+                    span {
+                        color: #0ea6e9;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            a {
+                span {
+                    color: #1a3365;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+.navbar {
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                &:active, &:hover {
+                    color: #00a353;
+                }
+
+                @media (max-width: 991px) {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.bg-status-canceled {
+    background-color: #F1416C !important;
+}
+
+.bg-status-booked {
+    background-color: #399EF7 !important;
+}
+
+.bg-status-checkIn {
+    background-color: #50CD89 !important;
+}
+
+.bg-status-checkOut {
+    background-color: #FAC702 !important;
+}
+
+.custom-active-button, .btn-paid-free:hover {
+    background-color: #009ef7 !important;
+    color: #fff !important;
+}
+
+.show-blog-scroll {
+    height: 100px;
+    overflow: auto;
+}

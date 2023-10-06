@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Guide | InfyVcards-SaaS</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.css">
+    <link rel="stylesheet" href="../css/circular-std-font-face.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.2/js/lightgallery.js"></script>
+    <meta name="description"
+          content="Manage your projects at one place. Generate reports and invoices from the tasks of specific projects.">
+
+    <link rel="preload" href="../assets/css/0.styles.675d8e5e.css" as="style">
+    <link rel="preload" href="../js/styles.js" as="script">
+    <link rel="preload" href="../js/2.js" as="script">
+    <link rel="preload" href="../js/10.js" as="script">
+    <link rel="prefetch" href="../js/11.js">
+    <link rel="prefetch" href="../js/12.js">
+    <link rel="prefetch" href="../js/3.js">
+    <link rel="prefetch" href="../js/4.js">
+    <link rel="prefetch" href="../js/5.js">
+    <link rel="prefetch" href="../js/6.js">
+    <link rel="prefetch" href="../js/7.js">
+    <link rel="prefetch" href="../js/8.js">
+    <link rel="prefetch" href="../js/9.js">
+    <link rel="stylesheet" href="../assets/css/0.styles.675d8e5e.css">
+</head>
+<body>
+<div id="app" data-server-rendered="true">
+    <div class="theme-container">
+        <header class="navbar">
+            <div class="sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"
+                     class="icon">
+                    <path fill="currentColor"
+                          d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path>
+                </svg>
+            </div>
+            <a href="../index.html" class="home-link router-link-active"><img src="../images/logo.png" alt="InfyVcards-SaaS"
+                                                                  class="logo"> <span class="site-name can-hide">InfyVcards-SaaS</span></a>
+            <div class="links"><!---->
+                <nav class="nav-links can-hide">
+                    <div class="nav-item"><a href="../index.html" class="nav-link">
+                        Home
+                    </a></div>
+                    <div class="nav-item"><a href="../docs/index.html" aria-current="page"
+                                             class="nav-link router-link-exact-active router-link-active">
+                        Docs
+                    </a></div>
+                    <div class="nav-item"><a href="../releases/index.html" class="nav-link">
+                        Releases
+                    </a></div>
+                    <div class="nav-item"><a href="../upgrade/index.html" class="nav-link">
+                        Upgrade Guide
+                    </a></div> <!----></nav>
+            </div>
+        </header>
+        <div class="sidebar-mask"></div>
+        <aside class="sidebar">
+            <nav class="nav-links">
+                <div class="nav-item"><a href="../index.html" class="nav-link">
+                    Home
+                </a></div>
+                <div class="nav-item"><a href="../docs/index.html" aria-current="page"
+                                         class="nav-link router-link-exact-active router-link-active">
+                    Docs
+                </a></div>
+                <div class="nav-item"><a href="../releases/index.html" class="nav-link">
+                    Releases
+                </a></div>
+                <div class="nav-item"><a href="../upgrade/index.html" class="nav-link">
+                    Upgrade Guide
+                </a></div> <!----></nav>
+            <ul class="sidebar-links">
+                <li>
+                    <section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!---->
+                    </p>
+                        <ul class="sidebar-links sidebar-group-items">
+                            <li><a href="#technologies-used" class="sidebar-link">Technologies Used</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#installation-guide" class="sidebar-link">Installation Guide</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header"><a href="#system-requirement"
+                                                                      class="sidebar-link">System Requirement</a></li>
+                                    <li class="sidebar-sub-header"><a href="#setup-infyvcards-saas-system"
+                                                                      class="sidebar-link">Setup InfyVcards-SaaS System</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#_1-copy-files-to-web-server"
+                                                                      class="sidebar-link">1. Copy files to web
+                                        server</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_2-setup-default-db"
+                                                                      class="sidebar-link">2. Setup Default DB</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_3-setup-environment-env-file"
+                                                                      class="sidebar-link">3. Setup environment .env
+                                        file</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_4-admin-login" class="sidebar-link">4.
+                                        Admin login</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_5-user-login" class="sidebar-link">5.
+                                        User login</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#setup-infyvcards-saas-into-local-environment" class="sidebar-link">Setup
+                                InfyVcards-SaaS into Local Environment</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header"><a
+                                            href="#_1-install-xampp-wamp-if-you-don-t-have-it"
+                                            class="sidebar-link">1. Install xampp/wamp (if you don't have it).</a></li>
+                                    <li class="sidebar-sub-header"><a href="#_2-create-folder-infyvcards-saas"
+                                                                      class="sidebar-link">2. Create folder
+                                        InfyVcards-SaaS</a></li>
+                                    <li class="sidebar-sub-header"><a
+                                            href="#_3-unzip-dist-zip-to-infyvcards-saas-folder" class="sidebar-link">3.
+                                        Unzip dist zip to InfyVcards-SaaS folder</a></li>
+                                    <li class="sidebar-sub-header"><a
+                                            href="#_4-point-the-domain-to-the-uploaded-folder"
+                                            class="sidebar-link">4. Point the domain to the uploaded folder</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#key-features-and-concepts" class="sidebar-link">Key Features and
+                                Concepts</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li><a href="#multi-languages-support" class="sidebar-link">Multi languages Support</a>
+                                <ul class="sidebar-sub-headers"></ul>
+                            </li>
+                            <li>
+                                <a href="#landing-page" class="sidebar-link">Landing Page</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header">
+                                        <a href="#about-us" class="sidebar-link">About Us</a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#services" class="sidebar-link">Services</a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#pricing-plans" class="sidebar-link">Pricing plans</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#admin-panel" class="sidebar-link">Super Admin Panel</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header">
+                                        <a href="#admin-dashboard" class="sidebar-link">Dashboard</a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#users" class="sidebar-link">Users</a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#vcard" class="sidebar-link">VCard</a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#vcard-template" class="sidebar-link">VCard Templates</a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#plan" class="sidebar-link">Subscription Plans</a>
+                                    </li> 
+                                    <li class="sidebar-sub-header">
+                                        <a href="#cms" class="sidebar-link">Front CMS</a>
+                                    </li> 
+                                    <li class="sidebar-sub-header">
+                                        <a href="#currency" class="sidebar-link">Currencies</a>
+                                    </li> 
+                                    <li class="sidebar-sub-header">
+                                        <a href="#location" class="sidebar-link">Countries / States / Cities</a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#settings" class="sidebar-link">Setting</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#user-panel" class="sidebar-link">User Panel</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header">
+                                        <a href="#user-dashboard" class="sidebar-link">Dashboard</a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#user-vcard" class="sidebar-link">VCard</a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#vcard-business-hours" class="sidebar-link">Business hours</a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#vcard-social-link" class="sidebar-link">Vcard Social Link</a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#vcard-custom-fonts" class="sidebar-link">Custom Fonts</a>
+                                    </li>
+                                    <li class="sidebar-sub-header">
+                                        <a href="#vcard-enquiry" class="sidebar-link">Enquiry</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </li>
+            </ul>
+        </aside>
+        <main class="page">
+            <div class="theme-default-content content__default"><h1 id="guide"><a href="#guide"
+                                                                                  class="header-anchor">#</a> Guide</h1>
+                <p>The goal of InfyVcards-SaaS is to make the hiring/job-seeking easy for all employers/candidates.</p>
+                <h2 id="technologies-used"><a href="#technologies-used" class="header-anchor">#</a> Technologies Used
+                </h2>
+                <p>This system uses multiple technologies to give the best possible experience.</p>
+                <ul>
+                    <li>PHP with Laravel Framework</li>
+                    <li>MySQL 5.6+</li>
+                    <li>jQuery</li>
+                    <li>Ajax</li>
+                </ul>
+                <h2 id="installation-guide"><a href="#installation-guide" class="header-anchor">#</a> Installation Guide
+                </h2>
+                <p>We tried our best to make the installation of the system as easy as possible.
+                    System Requirements
+                    It is assumed that you have primary knowledge Laravel installation knowledge since this application
+                    is built on Laravel.</p>
+                <h3 id="system-requirement"><a href="#system-requirement" class="header-anchor">#</a> System Requirement
+                </h3>
+                <p>It is assumed that you have primary knowledge Laravel and JS application installation knowledge since
+                    this application is built on Laravel with JS.</p>
+                <p>You can read about laravel Requirements <a href="https://laravel.com/docs/8.x#server-requirements"
+                                                              target="_blank" rel="noopener noreferrer">here<span><svg
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px"
+                        viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor"
+                                                                                                 d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                        fill="currentColor"
+                        points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                        class="sr-only">(opens new window)</span></span></a></p>
+                <p>You need update below variables in php.ini file if you want to send bigger files (Optional).</p>
+                <p>upload_max_filesize = 50M</p>
+                <p>max_file_uploads = 50</p>
+                <p>post_max_size = 100M</p>
+                <h3 id="setup-infyvcards-saas-system"><a href="#setup-infyvcards-saas-system" class="header-anchor">#</a>
+                    Setup InfyVcards-SaaS System</h3>
+                <p>If you have purchased the InfyVcards-SaaS system then you will be able to find the zip named <code>dist.zip</code>.
+                </p>
+                <p>If you want to setup <code>InfyVcards-SaaS</code> into your local environment then you can take help
+                    from <a href="#setup-infyvcards-saas-into-local-environment">here</a>.</p>
+                <p>Now if you want to setup InfyVcards-SaaS on your server then you can directly copy the dist.zip folder
+                    to your web root directory on server and the following steps:</p>
+                <h3 id="_1-copy-files-to-web-server"><a href="#_1-copy-files-to-web-server" class="header-anchor">#</a>
+                    1. Copy files to web server</h3>
+                <p>Upload dist.zip to your web server's root (public_html) and extract it there.</p>
+                <h3 id="_2-setup-default-db"><a href="#_2-setup-default-db" class="header-anchor">#</a> 2. Setup Default
+                    DB</h3>
+                <ol>
+                    <li>Open PHPMyAdmin on your server and do a login.</li>
+                </ol>
+<!--                <p><img src="../images/docs-images/db1.png" alt="Setup Default DB"></p>-->
+                <ol start="2">
+                    <li>Click on the Databases tab.</li>
+                </ol>
+<!--                <p><img src="../images/docs-images/db2.png" alt="Setup Default DB"></p>-->
+                <ol start="3">
+                    <li>Create a new database and specify a Database name of your choice and Click Create button.</li>
+                </ol>
+<!--                <p><img src="../images/docs-images/db3.png" alt="Setup Default DB"></p>-->
+                <ol start="4">
+                    <li>Now on the left, select the database (infy_vcards) OR the one that you have created.</li>
+                    <li>Click Import in the top menu</li>
+                </ol>
+<!--                <p><img src="../images/docs-images/db4.png" alt="Setup Default DB"></p>-->
+                <ol start="6">
+                    <li>Under Import, choose the default sql file from dist/database/infy_vcards.sql and click button
+                        Go.
+                    </li>
+                </ol>
+<!--                <p><img src="../images/docs-images/db5.png" alt="Setup Default DB"></p>-->
+                <h3 id="_3-setup-environment-env-file"><a href="#_3-setup-environment-env-file"
+                                                          class="header-anchor">#</a> 3. Setup environment .env file
+                </h3>
+                <ol>
+                    <li>Open .env file from your server's root folder.</li>
+                </ol>
+                <p><img src="../images/docs-images/setup.jpg" alt="Setup Default DB"></p>
+                <ol start="2">
+                    <li>Update your .env file</li>
+                </ol>
+                <p>You need to change the following information into your environment (.env) file.</p>
+                <p>Make sure your app name wrapped between Quotes (&quot;APP NAME&quot;).</p>
+                <div class="language- extra-class"><pre><code>- APP_NAME - Name of your Application
+- APP_URL - Change this URL with your server URL (including trailing path if you are putting it in sub folder or root website)
+- DB_HOST - Put your database hostname here
+- DB_PORT - Put your database port here if it does not default to 3306
+- DB_DATABASE - Change it to your database name
+- DB_USERNAME - Name of your database user
+- DB_PASSWORD - Password of your database user
+</code></pre>
+                </div>
+                <p>You will also need to set up mail configuration, you can read more about here for that setup based on
+                    mail service that you use.</p>
+                <div class="language- extra-class"><pre><code>- MAIL_DRIVER 
+- MAIL_HOST
+- MAIL_PORT
+- MAIL_USERNAME
+- MAIL_PASSWORD
+- MAIL_ENCRYPTION
+- MAIL_FROM_ADDRESS 
+- MAIL_FROM_NAME
+</code></pre>
+                </div>
+                <p>If you want to store your files to direct your <code>s3</code> bucket then you have to use following
+                    <code>.env</code> variables.
+                    You need to change <code>FILESYSTEM_DRIVER</code> and <code>MEDIA_DISK</code> value to
+                    <code>s3</code> when you are using AWS file storage.</p>
+                <div class="language- extra-class"><pre><code>- AWS_ACCESS_KEY_ID=
+- AWS_SECRET_ACCESS_KEY=
+- AWS_DEFAULT_REGION=us-east-1
+- AWS_BUCKET=
+- AWS_ENDPOINT=
+- AWS_URL=
+</code></pre>
+                </div>
+                <p>Or you can use your choice of storage driver to store your media assets if you want. All of your
+                    attachments will be placed into that.</p>
+                <h3 id="_4-admin-login"><a href="#_4-admin-login" class="header-anchor">#</a> 4. Super Admin login</h3>
+                <p>You can do admin login by accessing given URL.</p>
+                <p><code>YOUR_APP_URL/login</code></p>
+                <p>email: sadmin@vcard.com</p>
+                <p>password: 123456</p>
+
+                <h3 id="_5-user-login"><a href="#_5-user-login" class="header-anchor">#</a> 5. User login</h3>
+                <p>You can do admin login by accessing given URL.</p>
+                <p><code>YOUR_APP_URL/login</code></p>
+                <p>email: admin@vcard.com</p>
+                <p>password: 123456</p>
+                
+                <p>And you are ready to go.</p>
+                <h2 id="setup-infyvcards-saas-into-local-environment"><a href="#setup-infyvcards-saas-into-local-environment"
+                                                                      class="header-anchor">#</a> Setup InfyVcards-SaaS
+                    into Local Environment</h2>
+                <p>You can setup InfyVcards-SaaS into your local by using both zip files, but we recommend to use dist file
+                    so you have to perform minimal steps.</p>
+                <p>Here are some steps to setup InfyVcards-SaaS into your local environment :</p>
+                <h3 id="_1-install-xampp-wamp-if-you-don-t-have-it"><a
+                        href="#_1-install-xampp-wamp-if-you-don-t-have-it" class="header-anchor">#</a> 1. Install
+                    xampp/wamp (if you don't have it).</h3>
+                <h3 id="_2-create-folder-infyvcards-saas"><a href="#_2-create-folder-infyvcards-saas"
+                                                          class="header-anchor">#</a> 2. Create folder <code>InfyVcards-SaaS</code>
+                </h3>
+                <ul>
+                    <li>if you are using wamp then create InfyVcards-SaaS folder under you_path_to_wamp/www/</li>
+                    <li>if you are using xamp then create InfyVcards-SaaS folder under you_path_to_xamp/htdocs/</li>
+                </ul>
+                <h3 id="_3-unzip-dist-zip-to-infyvcards-saas-folder"><a href="#_3-unzip-dist-zip-to-infyvcards-saas-folder"
+                                                                     class="header-anchor">#</a> 3. Unzip dist zip to
+                    InfyVcards-SaaS folder</h3>
+                <h3 id="_4-point-the-domain-to-the-uploaded-folder"><a
+                        href="#_4-point-the-domain-to-the-uploaded-folder" class="header-anchor">#</a> 4. Point the
+                    domain to the uploaded folder</h3>
+                <p>You need to create virtual host first to setup InfyVcards-SaaS. You can find steps here to create
+                    virtual host.</p>
+                <ul>
+                    <li>You can find steps <a
+                            href="https://medium.com/d6-digital/create-virtual-host-for-apache-on-windows-10-by-using-xampp-8664b0427567"
+                            target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg"
+                                                                                     aria-hidden="true"
+                                                                                     focusable="false" x="0px" y="0px"
+                                                                                     viewBox="0 0 100 100" width="15"
+                                                                                     height="15" class="icon outbound"><path
+                            fill="currentColor"
+                            d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                            fill="currentColor"
+                            points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                            class="sr-only">(opens new window)</span></span></a> to create virtual host on
+                        <code>XAMPP</code>.
+                    </li>
+                    <li>You can find steps <a
+                            href="http://codedecode.co.in/blog/wordpress/set-up-virtual-host-with-wamp/" target="_blank"
+                            rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg"
+                                                                     aria-hidden="true" focusable="false" x="0px"
+                                                                     y="0px" viewBox="0 0 100 100" width="15"
+                                                                     height="15" class="icon outbound"><path
+                            fill="currentColor"
+                            d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon
+                            fill="currentColor"
+                            points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span
+                            class="sr-only">(opens new window)</span></span></a> to create virtual host on
+                        <code>WAMP</code>.
+                    </li>
+                </ul>
+                <p>Point your domain or subdomain to the InfyVcards-SaaS folder.</p>
+                <p>Please note that, InfyVcards-SaaS must be installed on a primary domain or subdomain. Installing on a
+                    sub-folder will not work, for example:</p>
+                <div class="language- extra-class"><pre><code>    example.com/InfyVcards-SaaS (Invalid)
+    localhost/InfyVcards-SaaS (Invalid) if you are putting it in sub folder or root website)
+    example.com (Valid)
+    local.InfyVcards-SaaS.com (Valid)
+    InfyVcards-SaaS.test (Valid)
+</code></pre>
+                </div>
+                <p>Open the link to the domain in the browser (Example: https://local.InfyVcards-SaaS.com).</p>
+                <h2 id="key-features-and-concepts"><a href="#key-features-and-concepts" class="header-anchor">#</a> Key
+                    Features and Concepts</h2>
+                <p>Here are some Key Features and Concepts that InfyVcards-SaaS provides.</p>
+                <p>Its a SaaS VCards Management application, so many users can register into system and use it as per their needs.</p>
+                <h2 id="multi-languages-support"><a href="#multi-languages-support" class="header-anchor">#</a> Multi
+                    languages Support</h2>
+                <p>We are supporting 9 languages in each panel (Admin | User)</p>
+                <ul>
+                    <li>English</li>
+                    <li>Spanish</li>
+                    <li>French</li>
+                    <li>German</li>
+                    <li>Russian</li>
+                    <li>Portuguese</li>
+                    <li>Arabic</li>
+                    <li>Chinese</li>
+                    <li>Turkish</li>
+                </ul>
+                <h2 id="landing-page"><a href="#landing-page" class="header-anchor">#</a>Landing Page</h2>
+                <p>Beautiful landing page from where users can get related pieces of information about the product. users can see the pricing here.</p>
+
+                <h3 id="about-us"><a href="#about-us" class="header-anchor">#</a> About Us
+                </h3>
+                <p>Users can get the product/company information from the about us section which is in the landing page.
+                </p>
+                
+                <h3 id="services"><a href="#services" class="header-anchor">#</a> Services</h3>
+                <p>You can add a different kind of services that you are providing in your system, which will attract more users.
+                </p>
+                
+                <h3 id="pricing-plans"><a href="#pricing-plans" class="header-anchor">#</a> Pricing plans</h3>
+                <p>Users can see the different pricing plans into landing page which is added by the admin from his panel.
+                </p>
+                <p>You can ask for inquiries and support from the landing page.
+                </p>
+                
+                <h2 id="admin-panel"><a href="#admin-panel" class="header-anchor">#</a>Super Admin Panel</h2>
+                <h3 id="admin-dashboard"><a href="#admin-dashboard" class="header-anchor">#</a> Dashboard</h3>
+                <p>Powerful super admin dashboard where admin can see overall information of this product.</p>
+                   <p> How many new user is registered, total plans he have, total vcard created, etc.</p>
+                
+                <h3 id="users"><a href="#users" class="header-anchor">#</a> Users Management</h3>
+                <p>Here admin can manage the users of the system. he can add / update/delete users.</p>
+                <p>Admin also able to directly login into the user's account. also he can change user status to in-active if something bad activity is reported.
+                </p>
+                
+                <h3 id="vcard"><a href="#vcard" class="header-anchor">#</a> VCard Management</h3>
+                <p>Here admin can see all the vcards users has created and also see the preview URL.</p>
+                <p>Admin can copy the preview URL from the listing and can see the actual preview by hitting that URL.</p>
+                
+                <h3 id="vcard-template"><a href="#vcard-template" class="header-anchor">#</a>Default VCard Templates</h3>
+                <p>Admin can see the default vcard templates here. right now we are providing 10 attractive vcard templates.</p>
+
+                <h3 id="plan"><a href="#plan" class="header-anchor">#</a>Subscription Plans</h3>
+                <p>Admin can create a different kind of subscription plans from here as per need with templates selection.
+                </p>
+                <p>You have to add price, currency, which templates you want to select for given plans and the other features that vcard have.
+                </p>
+
+                <h3 id="cms"><a href="#cms" class="header-anchor">#</a>Front CMS</h3>
+                <p>Here you can manage the all the content of the landing page. you can see the contact us inquiries here.
+                </p>
+                <p>Can add new testimonials, can update the about us text and many other things.
+                </p>
+                
+                <h3 id="currency"><a href="#currency" class="header-anchor">#</a>Currencies</h3>
+                <p>You can see different kind of currencies here that is pre-populated already.
+                </p>
+
+                <h3 id="location"><a href="#location" class="header-anchor">#</a>Countries / States / Cities</h3>
+                <p>By using this section you can add a different kind of countries/states within the countries and add cities within the states.
+                </p>
+                
+                <h3 id="settings"><a href="#settings" class="header-anchor">#</a>Setting</h3>
+                <p>Basic application settings will be configured from here. e.g Logo. favicon, application name, etc.
+                </p>
+
+                <h2 id="user-panel"><a href="#user-panel" class="header-anchor">#</a>User Panel</h2>
+                <h3 id="user-dashboard"><a href="#user-dashboard" class="header-anchor">#</a> Dashboard</h3>
+                <p>User can see the overall vcards information from here. How many vcard he has and the enquiries count on vcards.</p>
+
+                <h3 id="user-vcard"><a href="#user-vcard" class="header-anchor">#</a> VCard Management</h3>
+                <p>Here users can create new VCards as per his current plan. User can add his preview URL whatever they want.
+                </p>
+                <p>You can add the business hours and services, products, testimonials, social profile links and many other things from this section.
+                </p>
+                <p>You can share and download vcard.
+                </p>
+                
+                <h3 id="vcard-business-hours"><a href="#vcard-business-hours" class="header-anchor">#</a> Business hours</h3>
+                <p>Users can add business hours by days of their business, which will be shown to vcards preview.
+                </p>
+
+                <h3 id="vcard-social-link"><a href="#vcard-social-link" class="header-anchor">#</a>Vcard Social Link</h3>
+                <p>Users can add different social platforms links that will be later used to vcards preview. customers can see that links and use it for more information.
+                </p>
+
+                <h3 id="vcard-custom-fonts"><a href="#vcard-custom-fonts" class="header-anchor">#</a>Custom Fonts</h3>
+                <p>You can add your own fonts whatever you want to add, selected fonts will be highlighted into vcard preview.
+                </p>
+
+                <h3 id="vcard-enquiry"><a href="#vcard-enquiry" class="header-anchor">#</a>Enquiry</h3>
+                <p>Customers can submit the inquiry from the card preview & Received inquiries on business cards will be shown to related Vcards tables.
+                </p>
+               </div>
+            <footer class="page-edit"><!----> <!----></footer> <!----> </main>
+    </div>
+    <div class="global-ui"></div>
+</div>
+<script src="../js/styles.js" defer></script>
+<script src="../js/2.js" defer></script>
+<script src="../js/10.js" defer></script>
+</body>
+</html>

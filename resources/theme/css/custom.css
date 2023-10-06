@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/Poppins-Regular.ttf?35d26b781dc5fda684cce6ea04a41a75) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/fonts/Poppins-Bold.ttf?cdb29a5d7ccf57ff05a3fd9216d11771) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 700;
+  src: url(/fonts/Poppins-BoldItalic.ttf?cfb635a5111b545f5598482a64d2a2c3) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url(/fonts/Poppins-Medium.ttf?673ed42382ab264e0bf5b33f3579568c) format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 500;
+  src: url(/fonts/Poppins-MediumItalic.ttf?89e040c6a64d18f620dc8547b01b6291) format("truetype");
+  font-display: swap;
+}
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.313rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #EFF3F7;
+}
+
+h1, h2 {
+  color: #212529;
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pagination-showing-text {
+  color: #6C757D !important;
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    transition: padding-left 0.3s ease;
+    padding-left: 16.563rem;
+  }
+}
+
+.collapsed-menu .wrapper {
+  padding-left: 5rem;
+}
+
+.fs-small {
+  font-size: 0.75rem;
+}
+
+.fs-1-xl {
+  font-size: 1.875rem;
+}
+
+.fs-1-xxl {
+  font-size: 2rem;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.icon-label {
+  width: 20px;
+  height: 20px;
+}
+
+.height-270 {
+  height: 270px;
+}
+
+.inner-scroll {
+  overflow-x: auto;
+}
+
+.rounded-15 {
+  border-radius: 0.938rem;
+}
+
+.rounded-10 {
+  border-radius: 0.625rem;
+}
+
+.box-shadow-none {
+  box-shadow: none;
+}
+
+.shadow-md {
+  box-shadow: 0 5px 20px rgba(173, 181, 189, 0.2);
+}
+
+.width-540 {
+  max-width: 540px;
+  width: 100%;
+}
+
+.width-320 {
+  width: 320px;
+}
+
+.min-width-220 {
+  min-width: 220px;
+}
+
+@media (max-width: 1499px) {
+  .fs-xl-6 {
+    font-size: 14px !important;
+  }
+}
+
+.line {
+  width: calc(100% - 26px);
+  margin: auto;
+  background-color: #DEE2E6;
+  opacity: 1;
+}

@@ -1,0 +1,73 @@
+@import "variables";
+
+.portfolio-project-section {
+    .portfolio-project {
+        .portfolio-img {
+            overflow: hidden;
+
+            position: relative;
+            width: 100%;
+            height: 160px;
+
+            .search {
+
+
+                transition: all 200ms linear;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                position: absolute;
+                top: -50px;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0 0 0 5px;
+                background-image: $primary;
+            }
+        }
+
+        .portfolio-img:hover .search {
+
+            top: 0;
+
+        }
+    }
+
+    a:hover {
+        color: $orange !important;
+    }
+}
+
+.portfolio-img {
+    overflow: hidden;
+
+    position: relative;
+    width: 100%;
+    height: 160px;
+
+    .search {
+
+
+        transition: all 200ms linear;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        position: absolute;
+        top: -50px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 0 5px;
+        background-image: $primary;
+    }
+}
+
+.portfolio-img:hover .search {
+
+    top: 0;
+
+}
+
+

@@ -1,0 +1,1 @@
+listen("click",".email-subscribe-delete-btn",(function(e){var t=$(e.currentTarget).data("id"),i=route("email.sub.destroy",{emailSubscription:t});deleteItem(i,Lang.get("messages.subscriptions"))}));

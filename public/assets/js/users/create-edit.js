@@ -1,0 +1,1 @@
+listenChange("#profile",(function(){isValidFile($(this),"#profileValidationErrors")?displayPhoto(this,"#profilePreview"):$("#profilePreview").attr("src",defaultProfileUrl)})),listenClick(".cancel-profile",(function(){$("#profilePreview").attr("src",defaultProfileUrl)}));

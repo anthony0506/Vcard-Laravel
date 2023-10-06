@@ -1,0 +1,44 @@
+@import "variables";
+
+.comment-section {
+    background-color: $blue-200;
+    border-radius: 5px;
+    border: $border;
+
+    .comment {
+        .comment-img {
+            width: 40px;
+            min-width: 40px;
+            height: 40px;
+        }
+
+        .comment-desc {
+            background-color: $blue;
+            border-radius: 5px;
+            border: $border;
+
+            .tag {
+                position: absolute;
+                top: -15px;
+                right: 20px;
+                width: 30px;
+                height: 30px;
+                border-radius: 5px;
+                background-image: $primary;
+            }
+
+            span {
+                background-image: $primary;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            h5 {
+                @media (max-width: 575px) {
+                    position: absolute;
+                    top: 38px;
+                }
+            }
+        }
+    }
+}

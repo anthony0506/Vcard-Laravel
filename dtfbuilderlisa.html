@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DTFBuilderv1.5</title>
+  <!-- Copyright notice NO SHAREING will follow legal -->
+  <meta name="NufloGraphix" content="Justin Tietz">
+  <meta name="copyright" 
+        content="Copyright Â© 2023 NufloGraphix. All rights reserved. This work may not be reproduced, shared, or distributed without the express written consent of the author. Legal action may be taken against violators.">
+
+<style type="text/css">
+.columns-container {
+  display: flex;
+}
+.right-column {
+  flex-basis: 80%;
+  padding: 10px;
+}
+    .left-column {
+    flex-basis: 20%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 80%;
+}
+    #canvas-container {
+      overflow: auto;}
+	      .canvas-container {
+      margin: 0 auto;
+      position: relative;
+      width: 80%;
+      height: 2837px; 
+      overflow-y: auto;
+      margin-bottom: 0px;
+    }
+body 
+{
+      font-family: 'Montserrat', sans-serif;  
+    }
+#canvas {
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 1), 0 0 50px rgba(0, 0, 0, 0.5);
+      background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+      background-size: 25px 25px;	  
+    }
+	.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.button-row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 16px 32px;
+  border: 2px solid #4a4a4a;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #4a4a4a;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.button:hover {
+  background-color: #4a4a4a;
+  color: #fff;
+}
+
+.button-container {
+  padding: 1rem;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  width: 50%;
+  height: auto;
+}
+
+#image-info {
+  display: inline-block;
+  padding: 16px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #4a4a4a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.tabs {
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.tab-button {
+  flex: 1;
+  background-color: transparent;
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #4a4a4a;
+  border: 2px solid #4a4a4a;
+  border-radius: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tab-button.active {
+  background-color: #4a4a4a;
+  color: #fff;
+}
+
+.tab-content {
+  display: none;
+  padding: 16px;
+  background-color: #fff;
+  border: 2px solid #4a4a4a;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+
+.tab-content.active {
+  display: block;
+}
+  
+</style>
+<body>
+
+<div class="columns-container">
+  <div class="left-column">
+  <div class="tabs">
+  <button id="tab1" class="tab-button active" onclick="showTab('tab1')">How To</button>
+  <button id="tab2" class="tab-button" onclick="showTab('tab2')">Tools</button>
+</div>
+<div id="tab1-content" class="tab-content active">
+    <h2>DTF Gang Sheet Printing Instructions</h2>
+	
+<h2>Requirements</h2>
+
+<p>You can fill your DTF gang sheet with as many images as you would like to fit in a 55 cm wide by 100 cm length. Giving you multiple DTF Transfers on each DTF Gang Sheet. If you are ordering the same images repeated, you only need to complete one DTF gangsheet and let us know how many DTF gang sheets (linear meters) you would like printed. If you require more than one DTF Gang Sheet with different images than the first sheet, you will need to complete a separate DTF gangsheet for each sheet.</p>
+
+<p>You should only use quality images, ideally around 300 dpi with a transparent background. Our DTF Printing Service will print the DTF Gang Sheet as we receive it from you, so you will need to check the quality of the images. If you are not sure or not confident with the artwork requirements, we can offer an artwork assistance service at $10.00.</p>
+
+<p>Follow the four easy steps below and once downloaded, email the file to us and don't forget to add how many you would like printed.</p>
+
+<h2>Step One</h2>
+
+<p>Click the "Choose File(s)" button to locate the file(s) that you would like to add to your DTF gang sheet.</p>
+
+<h2>Step Two</h2>
+
+<p>Resize your image as required by clicking on the image and dragging in or out to make it smaller or larger. Use the "Flip left,Flip Right, Flip Horizontal, Flip Vertical, Rotate Left and Rotate Right" buttons to adjust your image. Use the "Remove White/Black Background" buttons to remove the white or black from your image. The current image size is shown to the right of the Download Button and will change as you adjust.</p>
+
+<h2>Step Three</h2>
+
+<p>Use the "Clone" button to copy the selected image for multiple copies of the same image and move it to where you would like it on the DTF Gang sheet. Use the "Remove" button to delete the currently selected image.</p>
+
+<h2>Step Four</h2>
+
+<p>Once your DTF Gang Sheet is full, click the "Download" button to download the DTF Gang Sheet print ready so that you can email it to our DTF Printing Service. Once printed, we will ship your DTF Transfer to you, ready for you to press.</p>
+
+</div>
+<div id="tab2-content" class="tab-content">
+  <div class="button-container">
+    <div class="file-upload button-row">
+      <label class="button" for="upload">Choose File(s)</label>
+      <input id="upload" type="file" style="display: none;">
+    </div>
+    <div class="button-row">
+      <button class="button" id="clone">Clone</button>
+    </div>
+    <div class="button-row">
+      <button class="button" id="remove">Remove</button>
+    </div>
+    <div class="button-row">
+      <button class="button" id="flipLeft">Flip Left</button>
+    </div>
+    <div class="button-row">
+      <button class="button" id="flipRight">Flip Right</button>
+    </div>
+    <div class="button-row">
+      <button class="button" id="flipHorizontal">Flip Horizontal</button>
+    </div>
+    <div class="button-row">
+      <button class="button" id="flipVertical">Flip Vertical</button>
+    </div>
+    <div class="button-row">
+      <button class="button" id="rotate-left">Rotate Left</button>
+    </div>
+    <div class="button-row">
+      <button class="button" id="rotate-right">Rotate Right</button>
+    </div>
+    <div class="button-row">
+      <button class="button" id="remove-background">Remove White Background</button>
+    </div>
+    <div class="button-row">
+      <button class="button" id="remove-background-black">Remove Black Background</button>
+    </div>
+    <div class="button-row">
+      <button class="button" id="auto-crop">Auto Crop</button>
+    </div>
+    <div class="button-row">
+      <button class="button" id="download">Download</button>
+    </div>
+  </div>
+  <div class="image-info">
+    <p>Image Info:</p>
+    <div id="image-info"></div>
+  </div>
+</div>
+
+  </div>
+  
+  <div class="right-column">
+  <div style="text-align: center; margin-top: 10px;">
+    <p style="">Artboard Size: 55cm (W) x 100cm (L)</p>
+	</div>
+    <div class="canvas-container" id="canvas-container">
+      <canvas height="${canvasHeight}" id="canvas" width="${canvasWidth}"></canvas>
+    </div>
+  </div>
+</div>
+
+<script>
+var exports = {};
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/521/fabric.min.js"></script><script src="https://cdn.jsdelivr.net/npm/changedpi/dist/index.js"></script><script>// <![CDATA[
+var div = document.querySelector(".canvas-container");
+var canvasWidth = div.clientWidth;
+var canvasHeight = div.clientHeight;
+var originWidth = 0;
+var originHeight = 0;
+var trueWidth = 6496;
+var canvasAspectRatio = canvasWidth / canvasHeight;
+var canvas = new fabric.Canvas('canvas', { width: canvasWidth, height: canvasHeight });
+var changeDPI = {};
+document.getElementById('upload').addEventListener('change', function(e) {
+  var file = e.target.files[0];
+  var reader = new FileReader();
+  reader.onload = function(f) {
+    var data = f.target.result;
+    fabric.Image.fromURL(data, function(img) {
+      var imgDPI = img.width * 25.4 / img.get('dpi');
+
+
+      if (imgDPI < 150) {
+
+        var confirmWarning = confirm("Warning: The selected image has a DPI below 150. Do you want to continue?");
+        if (!confirmWarning) {
+
+          canvas.remove(img);
+          return;
+        }
+      }
+
+      var imgAspectRatio = img.width / img.height;
+      var scaleFactor = 1;
+      if (imgAspectRatio > canvasAspectRatio) {
+        scaleFactor = canvasWidth / img.width;
+      } else {
+        scaleFactor = canvasHeight / img.height;
+      }
+
+      if (img.width <= canvasWidth && img.height <= canvasHeight) {
+        scaleFactor = 1;
+      }
+      fabric.Object.prototype.set({
+        borderColor: 'rgba(102,153,255,0.75)',
+        cornerColor: 'rgba(102,153,255,0.5)',
+        cornerSize: 10,
+        transparentCorners: false,
+        strokeWidth: 3 
+      });
+
+      originWidth = img.width;
+      originHeight = img.height;
+
+      img.set({
+        scaleX: scaleFactor,
+        scaleY: scaleFactor,
+        maxWidth: originWidth,
+        maxHeight: originHeight
+      });
+
+      var offsetX = (canvasWidth - img.width * scaleFactor) / 2;
+      var offsetY = (canvasHeight - img.height * scaleFactor) / 2;
+      img.set({ left: offsetX, top: offsetY });
+
+      canvas.add(img);
+      clearImageInfo();
+    }, {dpi: 150}); 
+  };
+
+  reader.readAsDataURL(file);
+  e.target.value = "";
+});
+    canvas.on('object:scaled', function(e) {
+      updateImageInfo();
+    });
+    document.getElementById('remove').addEventListener('click', function() {
+      var activeObject = canvas.getActiveObject();
+      if (activeObject) {
+        canvas.remove(activeObject);
+        clearImageInfo();
+
+      }
+    });
+	document.getElementById('auto-crop').addEventListener('click', function() {
+  var activeObject = canvas.getActiveObject();
+  if (activeObject && activeObject instanceof fabric.Image) {
+    var imageElement = activeObject.getElement();
+    var imageWidth = imageElement.width;
+    var imageHeight = imageElement.height;
+
+    var newCanvas = document.createElement('canvas');
+    newCanvas.width = imageWidth;
+    newCanvas.height = imageHeight;
+
+    var ctx = newCanvas.getContext('2d');
+    ctx.drawImage(imageElement, 0, 0);
+
+    removeTransparent(newCanvas);
+
+    activeObject.setElement(newCanvas);
+    canvas.renderAll();
+  }
+});
+function removeTransparent(canvas) {
+  var ctx = canvas.getContext('2d');
+  var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  var data = imageData.data;
+
+  var xMin = canvas.width;
+  var xMax = 0;
+  var yMin = canvas.height;
+  var yMax = 0;
+  for (var x = 0; x < canvas.width; x++) {
+    for (var y = 0; y < canvas.height; y++) {
+      var i = (y * canvas.width + x) * 4 + 3; // alpha channel
+      if (data[i] > 0) {
+        xMin = Math.min(xMin, x);
+        xMax = Math.max(xMax, x);
+        yMin = Math.min(yMin, y);
+        yMax = Math.max(yMax, y);
+      }
+    }
+  }
+  var cropWidth = xMax - xMin;
+  var cropHeight = yMax - yMin;
+
+  canvas.width = cropWidth;
+  canvas.height = cropHeight;
+  ctx.putImageData(imageData, -xMin, -yMin);
+}
+
+function removeWhite(canvas) {
+  var ctx = canvas.getContext('2d');
+  var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  var data = imageData.data;
+
+  for (var i = 0; i < data.length; i += 4) {
+    if (data[i] == 255 && data[i + 1] == 255 && data[i + 2] == 255) {
+      data[i + 3] = 0;
+    }
+  }
+
+  var xMin = canvas.width;
+  var xMax = 0;
+  var yMin = canvas.height;
+  var yMax = 0;
+  for (var x = 0; x < canvas.width; x++) {
+    for (var y = 0; y < canvas.height; y++) {
+      var i = (y * canvas.width + x) * 4 + 3; // alpha channel
+      if (data[i] > 0) {
+        xMin = Math.min(xMin, x);
+        xMax = Math.max(xMax, x);
+        yMin = Math.min(yMin, y);
+        yMax = Math.max(yMax, y);
+      }
+    }
+  }
+  var cropWidth = xMax - xMin;
+  var cropHeight = yMax - yMin;
+
+
+  canvas.width = cropWidth;
+  canvas.height = cropHeight;
+  ctx.putImageData(imageData, -xMin, -yMin);
+}
+
+document.getElementById('remove-background').addEventListener('click', function() {
+  var activeObject = canvas.getActiveObject();
+  if (activeObject && activeObject instanceof fabric.Image) {
+    var imageElement = activeObject.getElement();
+    var imageWidth = imageElement.width;
+    var imageHeight = imageElement.height;
+
+    var newCanvas = document.createElement('canvas');
+    newCanvas.width = imageWidth;
+    newCanvas.height = imageHeight;
+
+    var ctx = newCanvas.getContext('2d');
+    ctx.drawImage(imageElement, 0, 0);
+
+    removeWhite(newCanvas);
+
+    activeObject.setElement(newCanvas);
+    canvas.renderAll();
+  }
+});
+function removeBlack(canvas) {
+  var ctx = canvas.getContext('2d');
+  var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+  var data = imageData.data;
+
+  for (var i = 0; i < data.length; i += 4) {
+    if (data[i] == 0 && data[i + 1] == 0 && data[i + 2] == 0) {
+      data[i + 3] = 0;
+    }
+  }
+
+  var xMin = canvas.width;
+  var xMax = 0;
+  var yMin = canvas.height;
+  var yMax = 0;
+  for (var x = 0; x < canvas.width; x++) {
+    for (var y = 0; y < canvas.height; y++) {
+      var i = (y * canvas.width + x) * 4 + 3; // alpha channel
+      if (data[i] > 0) {
+        xMin = Math.min(xMin, x);
+        xMax = Math.max(xMax, x);
+        yMin = Math.min(yMin, y);
+        yMax = Math.max(yMax, y);
+      }
+    }
+  }
+  var cropWidth = xMax - xMin;
+  var cropHeight = yMax - yMin;
+
+  canvas.width = cropWidth;
+  canvas.height = cropHeight;
+  ctx.putImageData(imageData, -xMin, -yMin);
+}
+document.getElementById('remove-background-black').addEventListener('click', function() {
+  var activeObject = canvas.getActiveObject();
+  if (activeObject && activeObject instanceof fabric.Image) {
+    var imageElement = activeObject.getElement();
+    var imageWidth = imageElement.width;
+    var imageHeight = imageElement.height;
+
+    var newCanvas = document.createElement('canvas');
+    newCanvas.width = imageWidth;
+    newCanvas.height = imageHeight;
+
+    var ctx = newCanvas.getContext('2d');
+    ctx.drawImage(imageElement, 0, 0);
+
+    removeBlack(newCanvas);
+
+    activeObject.setElement(newCanvas);
+    canvas.renderAll();
+  }
+});
+
+
+	function showTab(tabId) {
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  tabButtons.forEach((button) => {
+    if (button.classList.contains('active')) {
+      button.classList.remove('active');
+    }
+  });
+  tabContents.forEach((content) => {
+    if (content.classList.contains('active')) {
+      content.classList.remove('active');
+    }
+  });
+
+  const clickedButton = document.getElementById(tabId);
+  const clickedContent = document.getElementById(`${tabId}-content`);
+
+  clickedButton.classList.add('active');
+  clickedContent.classList.add('active');
+}
+
+function downloadURI(uri, name) {
+  var canvasWidth = canvas.width;
+  var canvasHeight = canvas.height;
+  var visibleWidth = canvas.viewportTransform[0] * canvasWidth;
+  var visibleHeight = canvas.viewportTransform[3] * canvasHeight;
+  var canvasWidthInch = visibleWidth / 300;
+  var canvasHeightInch = visibleHeight / 300;
+  var scale = trueWidth / visibleWidth;
+  var newWidth = trueWidth;
+  var newHeight = visibleHeight * scale;
+var dpi = 300;
+var newWidthInch = newWidth / dpi;
+var newHeightInch = newHeight / dpi;
+var filename = 'DTFimg_' + newWidthInch.toFixed(2) + 'x' + newHeightInch.toFixed(2) + 'in.png';
+  var originalBackgroundColor = canvas.backgroundColor;
+  canvas.backgroundColor = 'transparent';
+  canvas.setWidth(newWidth);
+  canvas.setHeight(newHeight);
+  canvas.setZoom(scale);
+  var initialDataURL = canvas.toDataURL('image/png', 1);
+  var newCanvas = changeDpiDataUrl(initialDataURL, dpi);
+  canvas.setWidth(canvasWidth);
+  canvas.setHeight(canvasHeight);
+  canvas.setZoom(1);
+  canvas.backgroundColor = originalBackgroundColor;
+  download(newCanvas, filename);
+}
+document.getElementById('download').addEventListener('click', function() {
+  download(canvas.toDataURL('image/png'), 'DTFimg_21.65x39.37in.png',2.0);
+});
+function download(url, filename) {
+  var element = document.createElement('a');
+  element.setAttribute('href', url);
+  element.setAttribute('download', filename);
+  element.style.display = 'none';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+}
+document.getElementById('clone').addEventListener('click', function() {
+  var activeObject = canvas.getActiveObject();
+  if (activeObject) {
+    fabric.Image.fromObject(activeObject, function(newImage) {
+      newImage.set({
+        left: newImage.left + 10,
+        top: newImage.top + 10
+      });
+      canvas.add(newImage);
+      canvas.discardActiveObject();
+      canvas.setActiveObject(newImage);
+    });
+  }
+});
+document.getElementById('remove').addEventListener('click', function() {
+var activeObject = canvas.getActiveObject();
+if (activeObject) {
+  canvas.remove(activeObject);
+  clearImageInfo();
+}
+});
+document.getElementById('flipLeft').addEventListener('click', function() {
+  var activeObject = canvas.getActiveObject();
+  if (activeObject) {
+    activeObject.flipX = true;
+    canvas.renderAll();
+  }
+});
+document.getElementById('flipRight').addEventListener('click', function() {
+  var activeObject = canvas.getActiveObject();
+  if (activeObject) {
+    activeObject.flipX = false;
+    canvas.renderAll();
+  }
+});
+document.getElementById('flipHorizontal').addEventListener('click', function() {
+  var activeObject = canvas.getActiveObject();
+  if (activeObject) {
+    activeObject.flipY = true;
+    canvas.renderAll();
+  }
+});
+document.getElementById('flipVertical').addEventListener('click', function() {
+  var activeObject = canvas.getActiveObject();
+  if (activeObject) {
+    activeObject.flipY = false;
+    canvas.renderAll();
+  }
+});
+
+document.getElementById('rotate-left').addEventListener('click', function() {
+  var activeObject = canvas.getActiveObject();
+  if (activeObject) {
+    activeObject.rotate(activeObject.angle - 90);
+    canvas.renderAll();
+  }
+});
+
+document.getElementById('rotate-right').addEventListener('click', function() {
+  var activeObject = canvas.getActiveObject();
+  if (activeObject) {
+    activeObject.rotate(activeObject.angle + 90);
+    canvas.renderAll();
+  }
+});
+
+
+canvas.on('object:scaled', updateImageInfo);
+function updateImageInfo() {
+  var activeObject = canvas.getActiveObject();
+  if (activeObject && activeObject instanceof fabric.Image) {
+    var scaleFactor = trueWidth / (canvas.viewportTransform[0] * canvas.width);
+    var widthInches = activeObject.getScaledWidth() * scaleFactor / 300;
+    var heightInches = activeObject.getScaledHeight() * scaleFactor / 300;
+    var widthString = widthInches.toFixed(2) + ' inches';
+    var heightString = heightInches.toFixed(2) + ' inches';
+    var infoString = 'Selected Image Size: ' + widthString + ' x ' + heightString;
+    document.getElementById('image-info').textContent = infoString;
+  } else {
+    clearImageInfo();
+  }
+}
+canvas.on('object:scaling', function(e) {
+  updateImageInfo();
+});
+canvas.on('selection:created', updateImageInfo);
+canvas.on('selection:updated', updateImageInfo);
+canvas.on('selection:cleared', clearImageInfo);
+function clearImageInfo() {
+document.getElementById('image-info').textContent = '';
+}
+document.body.style.overflow = "auto";
+canvas.on('object:scaled', updateImageInfo);
+
+canvas.on('canvas:cleared', clearImageInfo);
+updateImageInfo();
+  window.changeDPI = changeDPI;
+// ]]></script></body>
+</html>

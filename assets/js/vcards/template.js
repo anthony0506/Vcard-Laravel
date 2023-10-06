@@ -1,0 +1,1 @@
+listenClick(".copy-clipboard",(function(){var e=$(this).data("id"),c=$("<input>");$("body").append(c),c.val($("#vcardUrl"+e).text()).select(),document.execCommand("copy"),c.remove(),displaySuccessMessage("copied successfully")}));

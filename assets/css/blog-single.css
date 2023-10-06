@@ -1,0 +1,36 @@
+.comment-section {
+  background-color: #222739;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.comment-section .comment .comment-img {
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+}
+.comment-section .comment .comment-desc {
+  background-color: #292e4e;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.comment-section .comment .comment-desc .tag {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+}
+.comment-section .comment .comment-desc span {
+  background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 575px) {
+  .comment-section .comment .comment-desc h5 {
+    position: absolute;
+    top: 38px;
+  }
+}

@@ -1,0 +1,1 @@
+(()=>{"use strict";$(document).on("change","#profile",(function(){isValidFile($(this),"#profileValidationErrors")?displayPhoto(this,"#profilePreview"):$("#profilePreview").attr("src",defaultProfileUrl)})),$(document).on("click",".cancel-profile",(function(){$("#profilePreview").attr("src",defaultProfileUrl)}))})();

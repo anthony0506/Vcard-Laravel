@@ -1,0 +1,277 @@
+.main-bg {
+  width: 70%;
+  height: 80vh;
+  background-color: #292e4e;
+  position: relative;
+  overflow: hidden;
+  top: 75px;
+  margin: auto;
+  border-radius: 20px;
+}
+@media (max-width: 1499px) {
+  .main-bg {
+    width: 90%;
+    height: 80vh;
+  }
+}
+@media (max-width: 1299px) {
+  .main-bg {
+    width: 95%;
+    height: 90vh;
+    top: 50px;
+  }
+}
+@media (max-width: 1199px) {
+  .main-bg {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    border-radius: 0;
+  }
+}
+
+.main-header {
+  position: absolute;
+  overflow-y: auto;
+  width: 320px;
+  height: 100%;
+  bottom: 0;
+  min-width: 320px;
+  z-index: 2;
+}
+.main-header .hero-img {
+  width: 100%;
+  height: 250px;
+}
+
+.icon-box {
+  bottom: -20px;
+  left: 12px;
+}
+
+.social-icon {
+  background: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+  border-radius: 50px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+}
+.social-icon a {
+  padding: 12px;
+}
+.social-icon i {
+  border-radius: 10px;
+}
+.social-icon i::before {
+  color: #ffffff;
+}
+
+#pages-menu, #pages-menu1 {
+  display: none;
+}
+
+.top-header {
+  position: absolute;
+  left: 320px;
+  right: 0;
+  top: 0px;
+  z-index: 9999;
+  border-left: 0px solid transparent;
+  box-sizing: border-box;
+}
+@media (max-width: 991px) {
+  .top-header {
+    left: 0px;
+    background-color: #1d2336;
+  }
+}
+.top-header .home i {
+  padding: 10px;
+  border-radius: 5px;
+  background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+}
+.top-header .sharedropbtn {
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .top-header .sharedropbtn {
+    padding: 6px 12px;
+  }
+}
+.top-header .contact i {
+  background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.top-header .dropbtn, .top-header .copy-referral-btn {
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .top-header .dropbtn, .top-header .copy-referral-btn {
+    padding: 7px 10px;
+  }
+}
+@media (max-width: 575px) {
+  .top-header .dropbtn, .top-header .copy-referral-btn {
+    padding: 9px 12px;
+  }
+}
+.top-header .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.top-header .fa-solid.fa-sort-down {
+  position: relative;
+  bottom: 2px;
+}
+.top-header .dropdown-content {
+  padding: 15px 15px 0px 15px;
+  display: none;
+  position: absolute;
+  background-color: #222739;
+  right: 0;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 9999999999;
+}
+@media (max-width: 991px) {
+  .top-header .dropdown-content {
+    top: 50px;
+  }
+}
+.top-header .dropdown-content a {
+  color: #ffffff;
+  padding: 0 0 15px 0;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+}
+@media (max-width: 575px) {
+  .top-header .dropdown-content a {
+    font-size: 12px;
+  }
+}
+.top-header .dropdown-content a img {
+  width: 18px;
+  height: 18px;
+}
+.top-header .dropdown-content a:hover, .top-header .dropdown-content .active, .top-header .dropdown-content :focus {
+  background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.top-header .show {
+  display: block;
+}
+.top-header .sharedropdown {
+  position: relative;
+  display: inline-block;
+}
+.top-header .sharedropdown-content {
+  padding: 10px;
+  display: none;
+  position: absolute;
+  background-color: #222739;
+  right: 0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 9999999;
+}
+@media (max-width: 991px) {
+  .top-header .sharedropdown-content {
+    top: 50px;
+  }
+}
+.top-header .sharedropdown-content a {
+  color: #ffffff;
+  padding: 0 0 15px 0;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+}
+@media (max-width: 575px) {
+  .top-header .sharedropdown-content a {
+    font-size: 12px;
+  }
+}
+.top-header .activetab {
+  display: block;
+}
+.top-header .share-icon {
+  background: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+  border-radius: 50px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+.top-header .share-icon:hover, .top-header .share-icon:focus, .top-header .share-icon.active {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.top-header .share-icon:hover i::before, .top-header .share-icon:focus i::before, .top-header .share-icon.active i::before {
+  background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.top-header .share-icon a {
+  padding: 10px;
+}
+.top-header .share-icon i {
+  border-radius: 10px;
+}
+.top-header .share-icon i::before {
+  color: #ffffff;
+}
+
+.nav-tabs {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+}
+.nav-tabs .nav-link.active {
+  background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+.nav-tabs .nav-link {
+  text-align: start;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  width: 100%;
+  color: #ffffff;
+  position: relative;
+  padding: 10px 12px;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus, .nav-tabs .nav-link:visited {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+.nav-tabs .nav-link i {
+  width: 18px;
+  height: 18px;
+  background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav-tabs .nav-link .fa-plus {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+
+.custom-social-position {
+  top: 228px !important;
+}

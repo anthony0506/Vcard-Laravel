@@ -1,0 +1,43 @@
+@import "../scss/vcard-templates";
+@import "custom";
+
+.iti {
+    display: block !important;
+    width: 100%;
+}
+
+.swal-modal .swal-text {
+    text-align: center;
+}
+
+.logo-fix-size {
+    max-height: 60px !important;
+    max-width: 120px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.object-fit-cover {
+    object-fit: cover !important;
+}
+
+.bg-dark-white {
+    color: black !important;
+    background: white !important;
+}
+
+.sidebar-app-logo {
+    max-height: 50px;
+    max-width: 120px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#toast-container > div {
+    min-width: 400px !important;
+    @media (max-width: 575px) {
+        min-width: 300px !important;
+    }
+}

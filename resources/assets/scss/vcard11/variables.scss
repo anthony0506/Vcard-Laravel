@@ -1,0 +1,30 @@
+//colors
+$gradient: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%) !default;
+$gray: rgb(128, 128, 128) !default;
+$blue: #292e4e !default;
+$white: #ffffff !default;
+$dark: #1d2336 !default;
+$blue-200: #222739 !default;
+$orange: #f59c37 !default;
+
+//theme color variable
+$primary: $gradient !default;
+
+
+$gray-100: #747b81 !default;
+$gray-200: #5d656c !default;
+$gray-300: #464f57 !default;
+$gray-400: #2f3942 !default;
+$blue-100: #CCD4E4 !default;
+$blue-200: #99A9C9 !default;
+
+// border-radius-variables
+$border: 1px solid rgb(255 255 255 / 18%) !default;
+$border-radius: 0.625rem !default;
+$border-radius-lg: 1.25rem !default;
+
+// buttons
+$btn-padding-y: 0.75rem !default;
+$btn-padding-x: 1.563rem !default;
+$btn-focus-box-shadow: 0 !default;
+

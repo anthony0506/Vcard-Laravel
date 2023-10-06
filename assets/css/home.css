@@ -1,0 +1,132 @@
+.hero-about h2 {
+  background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-about .desc {
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+}
+@media (max-width: 375px) {
+  .hero-about .desc {
+    padding: 12px;
+  }
+}
+.hero-about .desc span {
+  background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-about .desc a {
+  color: #ffffff;
+}
+.hero-about .desc .icon {
+  width: 16px;
+  height: 16px;
+}
+.hero-about .desc .icon i::before {
+  background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services-section .card {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  min-height: 163px !important;
+}
+.services-section .card .tag {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+}
+@media (max-width: 460px) {
+  .services-section .card .tag {
+    top: -17px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+  }
+}
+.services-section .card .card-img-top {
+  width: 60px;
+  height: 60px;
+}
+.services-section .card .card-img-top i {
+  background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.services-section .card .card-img-top i:before {
+  font-size: 50px;
+}
+.services-section .card:hover i {
+  background-image: linear-gradient(123.62deg, #ffffff 0%, #ffffff 100%);
+  -webkit-text-fill-color: #ffffff;
+}
+.services-section .card:hover .card-body h5 {
+  background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.services-section .card .card-body {
+  color: #ffffff;
+}
+.services-section .card .card-body .card-text {
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+.services-section .card .card-body .card-text::after {
+  background-image: linear-gradient(123.62deg, #f59c37 0%, #fd5479 100%);
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 100%;
+  bottom: 0;
+  width: 45px;
+  height: 1px;
+  z-index: 3;
+}
+
+.client-section .client-box {
+  border-radius: 6px;
+  background-color: #1d2336;
+}
+.client-section .client-box:hover {
+  background-color: #ffffff;
+}
+.client-section .client-box .client-img {
+  width: 100%;
+  height: 114px;
+  margin: auto;
+}
+
+.custom-margin-testimonial {
+  margin-left: -231px !important;
+}
+
+.testimonial-card-custom {
+  min-height: 163px !important;
+}
+
+.testimonial-2card-custom {
+  min-height: 163px !important;
+  margin-left: 11px !important;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 900px !important;
+  }
+}

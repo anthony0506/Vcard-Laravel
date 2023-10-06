@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Releases | InfyVcards-SaaS</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.css">
+    <link rel="stylesheet" href="../css/circular-std-font-face.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.2/js/lightgallery.js"></script>
+    <meta name="description"
+          content="Manage your projects at one place. Generate reports and invoices from the tasks of specific projects.">
+
+    <link rel="preload" href="../assets/css/0.styles.675d8e5e.css" as="style">
+    <link rel="preload" href="../js/styles.js" as="script">
+    <link rel="preload" href="../js/2.js" as="script">
+    <link rel="preload" href="../js/11.js" as="script">
+    <link rel="prefetch" href="../js/10.js">
+    <link rel="prefetch" href="../js/12.js">
+    <link rel="prefetch" href="../js/3.js">
+    <link rel="prefetch" href="../js/4.js">
+    <link rel="prefetch" href="../js/5.js">
+    <link rel="prefetch" href="../js/6.js">
+    <link rel="prefetch" href="../js/7.js">
+    <link rel="prefetch" href="../js/8.js">
+    <link rel="prefetch" href="../js/9.js">
+    <link rel="stylesheet" href="../assets/css/0.styles.675d8e5e.css">
+</head>
+<body>
+<div id="app" data-server-rendered="true">
+    <div class="theme-container">
+        <header class="navbar">
+            <div class="sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"
+                     class="icon">
+                    <path fill="currentColor"
+                          d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path>
+                </svg>
+            </div>
+            <a href="/" class="home-link router-link-active"><img src="../images/logo.png" alt="InfyVcards-SaaS"
+                                                                  class="logo"> <span class="site-name can-hide">InfyVcards-SaaS</span></a>
+            <div class="links"><!---->
+                <nav class="nav-links can-hide">
+                    <div class="nav-item"><a href="../index.html" class="nav-link">
+                        Home
+                    </a></div>
+                    <div class="nav-item"><a href="../docs/index.html" class="nav-link">
+                        Docs
+                    </a></div>
+                    <div class="nav-item"><a href="../releases/index.html" aria-current="page"
+                                             class="nav-link router-link-exact-active router-link-active">
+                        Releases
+                    </a></div>
+                    <div class="nav-item"><a href="../upgrade/index.html" class="nav-link">
+                        Upgrade Guide
+                    </a></div> <!----></nav>
+            </div>
+        </header>
+        <div class="sidebar-mask"></div>
+        <aside class="sidebar">
+            <nav class="nav-links">
+                <div class="nav-item"><a href="../index.html" class="nav-link">
+                    Home
+                </a></div>
+                <div class="nav-item"><a href="../docs/index.html" class="nav-link">
+                    Docs
+                </a></div>
+                <div class="nav-item"><a href="../releases/index.html" aria-current="page"
+                                         class="nav-link router-link-exact-active router-link-active">
+                    Releases
+                </a></div>
+                <div class="nav-item"><a href="../upgrade/index.html" class="nav-link">
+                    Upgrade Guide
+                </a></div> <!----></nav>
+            <ul class="sidebar-links">
+                <li>
+                    <section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Releases</span> <!---->
+                    </p>
+                        <ul class="sidebar-links sidebar-group-items">
+                            <li><a href="#release-notes" class="sidebar-link">Release Notes</a>
+                                <ul class="sidebar-sub-headers">
+                                    <li class="sidebar-sub-header"><a href="#v7.3.0" class="sidebar-link">v7.3.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v7.2.0" class="sidebar-link">v7.2.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v7.1.0" class="sidebar-link">v7.1.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v7.0.0" class="sidebar-link">v7.0.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v6.6.0" class="sidebar-link">v6.6.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v6.5.0" class="sidebar-link">v6.5.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v6.4.0" class="sidebar-link">v6.4.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v6.3.0" class="sidebar-link">v6.3.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v6.2.0" class="sidebar-link">v6.2.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v6.1.0" class="sidebar-link">v6.1.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v6.0.0" class="sidebar-link">v6.0.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v5.2.0" class="sidebar-link">v5.2.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v5.1.0" class="sidebar-link">v5.1.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v5.0.0" class="sidebar-link">v5.0.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v4.0.0" class="sidebar-link">v4.0.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v3.0.0" class="sidebar-link">v3.0.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v2.4.0" class="sidebar-link">v2.4.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v2.3.0" class="sidebar-link">v2.3.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v2.1.0" class="sidebar-link">v2.1.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v2.0.0" class="sidebar-link">v2.0.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v1-2-0" class="sidebar-link">v1.2.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v1-1-0" class="sidebar-link">v1.1.0</a>
+                                    </li>
+                                    <li class="sidebar-sub-header"><a href="#v1-0-0" class="sidebar-link">v1.0.0</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+                </li>
+            </ul>
+        </aside>
+        <main class="page">
+            <div class="theme-default-content content__default"><h1 id="releases"><a href="#releases"
+                                                                                     class="header-anchor">#</a>
+                Releases</h1>
+                <p>You can find what changes, features and bug fixed into some specific version here. we are also
+                    providing guide to upgrade from an old version to newer version.</p>
+                <h2 id="release-notes"><a href="#release-notes" class="header-anchor">#</a> Release Notes</h2>
+
+                <!-- v7.3.0 Release-->
+                <h3 id="v7.3.0"><a href="#v7.3.0" class="header-anchor">#</a> v7.3.0</h3>
+                <h5 id="feature-v7.3.0"><a href="#feature-v7.3.0" class="header-anchor">#</a> Feature</h5>
+                <ul>
+                    <li>Add button to generate random Alias.</li>
+                        <li>Super admin can change currency position</li>
+                        <li>User can set QR code download size</li>
+                        <li>Add Lightbox for Vcard Gallery images</li>
+                        <li>Sticky quick action buttons on all vcard templates</li>
+                </ul>
+                <h5 id="enhancements-v7.3.0"><a href="#enhancements-v7.3.0" class="header-anchor">#</a> Enhancements</h5>
+                <ul>
+                    <li>Enable/disable enquiry form on vcard templates</li>
+                    <li>Enable/disable download QR code from vcard templates</li>
+                   
+                </ul>
+
+                <h5 id="fixes-v7.3.0"><a href="#v7.3.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Bugs and Responsiveness fixes.</li>
+                </ul>
+                
+                <!-- v7.2.0 Release-->
+                <h3 id="v7.2.0"><a href="#v7.1.0" class="header-anchor">#</a> v7.2.0</h3>
+                <h5 id="feature-v7.2.0"><a href="#feature-v7.1.0" class="header-anchor">#</a> Feature</h5>
+                <ul>
+                    <li>Add coupon code feature.</li>
+                </ul>
+
+                <h5 id="fixes-v7.2.0"><a href="#v7.2.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Bugs and Responsiveness fixes.</li>
+                </ul>
+                
+                <!-- v7.1.0 Release-->
+                <h3 id="v7.1.0"><a href="#v7.1.0" class="header-anchor">#</a> v7.1.0</h3>
+                <h5 id="feature-v7.1.0"><a href="#feature-v7.1.0" class="header-anchor">#</a> Enhancements</h5>
+                <ul>
+                    <li>Now you can set payment credential in setting module.</li>
+                    <li>Add options to download vcard and vcard qr code on vcard listing screen in user panel.</li>
+                    <li>Show manual payment guide when purchase plan with manual payment.</li>
+                    <li>Add Note and Attachment for manual payment.</li>
+                    <li> Add url field for service create and edit.</li>
+                    <li> Added affiliation module in super Admin and admin panel.</li>
+                </ul>
+               
+                <h5 id="fixes-v7.1.0"><a href="#v7.0.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Bugs and Responsiveness fixes.</li>
+                </ul>
+
+
+                <!-- v7.0.0 Release-->
+                <h3 id="v7.0.0"><a href="#v7.0.0" class="header-anchor">#</a> v7.0.0</h3>
+                <h5 id="feature-v7.0.0"><a href="#feature-v7.0.0" class="header-anchor">#</a> Enhancements</h5>
+                <ul>
+                    <li> Added Laravel 9.</li>
+                   
+                </ul>
+                <h5 id="fixes-v7.0.0"><a href="#v7.0.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Bugs and Responsiveness fixes.</li>
+                </ul>
+                
+                <!-- v6.7.0 Release-->
+                <h3 id="v6.7.0"><a href="#v6.7.0" class="header-anchor">#</a> v6.7.0</h3>
+                <h5 id="feature-v6.7.0"><a href="#feature-v6.7.0" class="header-anchor">#</a> Enhancements</h5>
+                <ul>
+                    <li>Language change functionality added to login /register/forgot password pages</li>
+                    <li>Added support to admin can duplicate their vcard.</li>
+                    <li>Added editor for description at Vcard edit/create.</li>
+                    <li>New vcard template "Vcard 11" added.</li>
+                    <li>Support added to Super Admin can change/assign user's plan.</li>
+                    <li>Language flags added to language dropdown.</li>
+
+                </ul>
+                <h5 id="fixes-v6.7.0"><a href="#v6.7.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Bugs and Responsiveness fixes.</li>
+                </ul>
+                
+                <!-- v6.6.0 Release-->
+                <h3 id="v6.6.0"><a href="#v6.5.0" class="header-anchor">#</a> v6.6.0</h3>
+                <h5 id="feature-v6.6.0"><a href="#feature-v6.6.0" class="header-anchor">#</a> Enhancements</h5>
+                <ul>
+                    <li> Added turbo support at front side.</li>
+                    <li> Added support extra scripts for front side</li>
+                    <li> Added Admin module to the Super Admin login </li>
+                </ul>
+                <h5 id="fixes-v6.6.0"><a href="#v6.5.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Cookie consent version change and fix ui related issues.</li>
+                </ul>
+                
+                <!-- v6.5.0 Release-->
+                <h3 id="v6.5.0"><a href="#v6.5.0" class="header-anchor">#</a> v6.5.0</h3>
+                <h5 id="feature-v6.5.0"><a href="#feature-v6.5.0" class="header-anchor">#</a> Enhancements</h5>
+                <ul>
+                    <li> Added support to email verification when users changes her/his mail.</li>
+                    <li> UI enhancement in Vcard templates</li>
+                    <li> Add Alternate email & phone to the vCard template</li>
+                    <li>  Support added for deleting appointments & inquiry</li>
+                    <li> Make Occupation & Description optional to Vcard create/edit.</li>
+                    <li> Support added for enable/diable front pages</li>
+                </ul>
+                <h5 id="fixes-v6.5.0"><a href="#v6.5.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Bugs and Responsiveness fixes.</li>
+                </ul>
+
+                <!-- v6.4.0 Release-->
+                <h3 id="v6.4.0"><a href="#v6.4.0" class="header-anchor">#</a> v6.4.0</h3>
+                <h5 id="feature-v6.4.0"><a href="#feature-v6.4.0" class="header-anchor">#</a> Enhancements</h5>
+                <ul>
+                    <li>Add appointment status support in Vcard Appointment .</li>
+                    <li>Support added to change users' password for super admin.</li>
+                    <li>Support added for default country code in the phone field</li>
+                    <li>Add version number in the footer</li>
+                    <li>Support added for country wise currency format
+                    </li>
+                </ul>
+                <h5 id="fixes-v6.4.0"><a href="#v6.4.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Dynamic front sub text.</li>
+                </ul>
+
+                <!-- v6.3.0 Release-->
+                <h3 id="v6.3.0"><a href="#v6.3.0" class="header-anchor">#</a> v6.3.0</h3>
+                <h5 id="feature-v6.3.0"><a href="#feature-v6.3.0" class="header-anchor">#</a> Enhancements</h5>
+                <ul>
+                    <li>Add localisation support in appointment-calendar.</li>
+                    <li>Add multi-language support in mail.</li>
+                </ul>
+                <h5 id="fixes-v6.3.0"><a href="#v6.3.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Bugs and Responsiveness fixes.</li>
+                    <li>Description not showing in vCard template.</li>
+                </ul>
+
+
+                <!-- v6.2.0 Release-->
+                <h3 id="v6.2.0"><a href="#v6.2.0" class="header-anchor">#</a> v6.2.0</h3>
+                <h5 id="feature-v6.2.0"><a href="#feature-v6.2.0" class="header-anchor">#</a> Enhancements</h5>
+                <ul>
+                    <li>Add localization support in the date-picker, placeholder, and success message.</li>
+                    <li>12 & 24-hour time format settings added in User Login.</li>
+                    <li>Add Made by the link in the vcard footer.</li>
+                    <li>Add Terms & conditions and Privacy policy support on the landing side.</li>
+                </ul>
+                <h5 id="fixes-v6.2.0"><a href="#v6.2.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Bugs and Responsiveness fixes.</li>
+                </ul>
+                
+                <!-- v6.1.0 Release-->
+                <h3 id="v6.1.0"><a href="#v6.1.0" class="header-anchor">#</a> v6.1.0</h3>
+                <h5 id="feature-v6.1.0"><a href="#feature-v6.1.0" class="header-anchor">#</a> Features</h5>
+                <ul>
+                    <li>Add Terms & conditions and Privacy policy support in the vcard.</li>
+                    <li>Add sitemap support in vcard.</li>
+                </ul>
+                <h5 id="fixes-v6.1.0"><a href="#v6.1.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Bugs and Responsiveness fixes.</li>
+                </ul>
+
+                <!-- v6.0.0 Release-->
+                <h3 id="v6.0.0"><a href="#v6.0.0" class="header-anchor">#</a> v6.0.0</h3>
+                <h5 id="feature-v6.0.0"><a href="#feature-v6.0.0" class="header-anchor">#</a> Features</h5>
+                <ul>
+                    <li>Brand New Theme Integrated.</li>
+                    <li>Major updates on UI / Layouts.</li>
+                </ul>
+                <h5 id="fixes-v6.0.0"><a href="#v6.0.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Bugs and Responsiveness fixes.</li>
+                </ul>
+                
+                <!-- v5.2.0 Release-->
+                <h3 id="v5.2.0"><a href="#v5.0.0" class="header-anchor">#</a> v5.2.0</h3>
+                <h5 id="feature-v5.2.0"><a href="#feature-v5.2.0" class="header-anchor">#</a> Features</h5>
+                <ul>
+                    <li>Support to add Google analytics script on landing page.</li>
+                    <li>Support to disable language on vcard added.</li>
+                </ul>
+                <h5 id="fixes-v5.2.0"><a href="#v5.0.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Responsive and other Bugs fixes.</li>
+                </ul>
+                
+                <!-- v5.1.0 Release-->
+                <h3 id="v5.1.0"><a href="#v5.1.0" class="header-anchor">#</a> v5.1.0</h3>
+                <h5 id="feature-v5.1.0"><a href="#feature-v5.1.0" class="header-anchor">#</a>Enhancement</h5>
+                <ul>
+                    <li>Blog UI refactored.</li>
+                    <li>PNG image support added while downloading QR code.</li>
+                </ul>
+                <h5 id="fixes-v5.1.0"><a href="#v5.1.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Responsive and other Bugs fixes.</li>
+                </ul>  
+                
+                <!-- v5.0.0 Release-->
+                <h3 id="v5.0.0"><a href="#v5.0.0" class="header-anchor">#</a> v5.0.0</h3>
+                <h5 id="feature-v5.0.0"><a href="#feature-v5.0.0" class="header-anchor">#</a> Features</h5>
+                <ul>
+                    <li>Free and Paid Appointment supported in VCard.</li>
+                </ul>
+                <h5 id="fixes-v5.0.0"><a href="#v5.0.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Responsive and other Bugs fixes.</li>
+                </ul>
+                
+                <!-- v4.0.0 Release-->
+                <h3 id="v4.0.0"><a href="#v4.0.0" class="header-anchor">#</a> v4.0.0</h3>
+                <h5 id="feature-v4.0.0"><a href="#feature-v4.0.0" class="header-anchor">#</a> Features</h5>
+                <ul>
+                    <li>Translation Manager Added.</li>
+                    <li>Blog module added in Vcard.</li>
+                </ul>
+                <h5 id="enhancement-v4.0.0"><a href="#enhancement-v3.0.0" class="header-anchor">#</a> Enhancements</h5>
+                <ul>
+                    <li>Location map added in Vcard.</li>
+                    <li>Appointment calendar added in user login.</li>
+                    <li>Add Plan and Income chart in Admin Login.</li>
+                    <li>Send mail when appointment booked in Vcard .</li>
+                </ul>
+                <h5 id="fixes-v4.0.0"><a href="#v4.0.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Responsive and other Bugs fixes.</li>
+                </ul>
+
+                <!-- v3.0.0 Release-->
+                <h3 id="v3.0.0"><a href="#v3.0.0" class="header-anchor">#</a> v3.0.0</h3>
+                <h5 id="feature-v3.0.0"><a href="#feature-v3.0.0" class="header-anchor">#</a> Features</h5>
+                <ul>
+                    <li>Single page application feel's added &#128522.</li>
+                </ul>
+                <h5 id="enhancement-v3.0.0"><a href="#enhancement-v3.0.0" class="header-anchor">#</a> Enhancements</h5>
+                <ul>
+                    <li>Turbo js added.</li>
+                </ul>
+                <h5 id="fixes-v3.0.0"><a href="#v3.0.0" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Responsive and other Bugs fixes.</li>
+                </ul>
+                
+                
+                <!-- v2.4.0 Release-->
+                <h3 id="v2.4.0"><a href="#v2.4.0" class="header-anchor">#</a> v2.4.0</h3>
+                <h5 id="enhancement-6"><a href="#enhancement-5" class="header-anchor">#</a> Enhancements</h5>
+                <ul>
+                    <li>Livewire's table added.</li>
+                    <li>Application enhancements.</li>
+                </ul>
+                <h5 id="fixes-5"><a href="#fixes-4" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Responsive and other Bugs fixes.</li>
+                </ul>
+
+                <!-- v2.3.0 Release-->
+                <h3 id="v2.3.0"><a href="#v2.3.0" class="header-anchor">#</a> v2.3.0</h3>
+                <h5 id="features-5"><a href="#features-5" class="header-anchor">#</a> Features</h5>
+                <ul>
+                    <li>SEO support added.</li>
+                </ul>
+                <h5 id="enhancement-5"><a href="#enhancement-5" class="header-anchor">#</a> Enhancements</h5>
+                <ul>
+                    <li>Cash payment support added.</li>
+                    <li>Vcard not accessible when plan expired.</li>
+                </ul>
+
+                <h5 id="fixes-4"><a href="#fixes-4" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Responsive and other Bugs fixes.</li>
+                </ul>
+
+                <h3 id="v2.1.0"><a href="#v2.1.0" class="header-anchor">#</a> v2.1.0</h3> <h5 id="features-4"><a
+                        href="#features-4" class="header-anchor">#</a> Features</h5>
+                <ul>
+                    <li>Analytics support added into VCards Admin side</li>
+                    <li>Social login support added into VCards</li>
+                </ul>
+
+                <h5 id="fixes-3"><a href="#fixes-3" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Responsive and other Bugs fixes.</li>
+                </ul>
+                <h3 id="v2.0.0"><a href="#v2.0.0" class="header-anchor">#</a> v2.0.0</h3> <h5 id="features-3"><a
+                        href="#features-3" class="header-anchor">#</a> Features</h5>
+                <ul>
+                    <li>Analytics support added into VCards</li>
+                    <li>Dark mode theme added into VCards</li>
+                    <li>Multi-language support added into VCards</li>
+                </ul>
+
+                <h5 id="fixes-2"><a href="#fixes-2" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Responsive and other Bugs fixes.</li>
+                </ul>
+                <h3 id="v1-2-0"><a href="#v1-2-0" class="header-anchor">#</a> v1.2.0</h3> <h5 id="features-2"><a
+                        href="#features-2" class="header-anchor">#</a> Features</h5>
+                <ul>
+                    <li> Appointments support added into VCards</li>
+                    <li>Gallery support added into VCards</li>
+                    <li>Enquiry send email support added</li>
+                    <li>PayPal and RazorPay payment gateway added</li>
+                </ul>
+
+                <h5 id="fixes-1"><a href="#fixes-1" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Responsive and other Bugs fixes.</li>
+                </ul>
+                <h3 id="v1-1-0"><a href="#v1-1-0" class="header-anchor">#</a> v1.1.0</h3> <h5 id="features-1"><a
+                        href="#features-1" class="header-anchor">#</a> Features</h5>
+                <ul>
+                    <li>Multi-language support added</li>
+                    <li>Products support added into VCards</li>
+                    <li>VCard download and share support added</li>
+                </ul>
+
+                <h5 id="fixes"><a href="#fixes" class="header-anchor">#</a> Fixes</h5>
+                <ul>
+                    <li>Responsive and other Bugs fixes.</li>
+                </ul>
+
+                <h3 id="v1-0-0"><a href="#v1-0-0" class="header-anchor">#</a> v1.0.0</h3> <h5 id="features"><a
+                        href="#features" class="header-anchor">#</a> Features</h5>
+                <p>Super Admin Features ::</p>
+                <ul>
+                    <li>Dashboard</li>
+                    <li>Users Management</li>
+                    <li>Subscription plans</li>
+                    <li>Enquiry Management</li>
+                    <li>Users Management</li>
+                    <li>Vcard Template Management</li>
+                    <li>Vcard Management</li>
+                    <li>Currency Management</li>
+                    <li>Country Management</li>
+                    <li>State Management</li>
+                    <li>City Management</li>
+                    <li>
+                        Settings
+                        <ul>
+                            <li>App name, Email, Phone, Logo...</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Front CMS Management
+                        <ul>
+                            <li>Front CMS Management</li>
+                            <li>About Us</li>
+                            <li>Features</li>
+                            <li>Testimonials</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p>User Panel ::</p>
+                <ul>
+                    <li>Dashboard</li>
+                    <li>
+                        Vcard Management
+                        <ul>
+                            <li>Custom url and details for vcard</li>
+                            <li>Vcard social links</li>
+                            <li>Vcard testimonials</li>
+                            <li>Password protected vcard</li>
+                            <li>QR Code for vcard</li>
+                            <li>Vcard Services</li>
+                            <li>Custom font for vcard</li>
+                            <li>Custom js and css for vcard</li>
+                            <li>Business hours for vcard</li>
+                            <li>Templates for vcard</li>
+                            <li>Enquiry for vcard</li>
+                        </ul>
+                    </li>
+                    <li>Subscriptions</li>
+                </ul>
+            </div>
+            <footer class="page-edit"><!----> <!----></footer> <!----> </main>
+    </div>
+    <div class="global-ui"></div>
+</div>
+<script src="../js/styles.js" defer></script>
+<script src="../js/2.js" defer></script>
+<script src="../js/11.js" defer></script>
+</body>
+</html>
